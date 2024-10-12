@@ -5,25 +5,38 @@ from django.shortcuts import render,redirect,get_object_or_404,HttpResponse
 from django.contrib import messages
 from .models import Administration,NewsModel,GalleryModel,EnquiryModel,BlogModel,MassesModel
 from .forms import Administration_Form,NewsForm,GalleryForm,EnquiryForm,BlogForm,MassForm
-from django.contrib.auth import authenticate, login, logout
+# from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth import authenticate, login as django_login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 
 
+# def user_login(request):
+#     if request.method == "POST":
+#         username = request.POST['username']
+#         password = request.POST['password']
+#         user = authenticate(request, username=username, password=password)
+#         if user is not None:
+#             login(request, user)
+#             return redirect('admin_dashboard')
+#         else:
+#             messages.error(request, "Invalid username or password. Please try again....")
+#             print("Invalid login attempt")  
+#             return redirect('user_login')
+#     return render(request, 'authenticate/login.html')
 def user_login(request):
     if request.method == "POST":
         username = request.POST['username']
         password = request.POST['password']
         user = authenticate(request, username=username, password=password)
         if user is not None:
-            login(request, user)
+            django_login(request, user)  # Use the alias here
             return redirect('admin_dashboard')
         else:
             messages.error(request, "Invalid username or password. Please try again....")
             print("Invalid login attempt")  # Debug print
             return redirect('user_login')
     return render(request, 'authenticate/login.html')
-
 
 @login_required(login_url='user_login')
 def admin_dashboard(request):
