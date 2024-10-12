@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-&k15m$t4o*&znjh=_ffw!(5cwofj+w3uxs5jpxkbfsgokm$=3e
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['syro-malabar.onrender.com']
+# ALLOWED_HOSTS = ['syro-malabar.onrender.com']
 
 # Application definition
 
@@ -52,7 +52,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware'
+    
 ]
 
 ROOT_URLCONF = 'churchpro.urls'
@@ -155,7 +155,7 @@ CKEDITOR_IMAGE_BACKEND = "pillow"
 
 CKEDITOR_ALLOW_NONIMAGE_FILES = True
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 CKEDITOR_CONFIGS = {
     'default': {
