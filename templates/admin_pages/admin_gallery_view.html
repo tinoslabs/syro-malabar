@@ -1,0 +1,66 @@
+{% extends "admin_pages/base.html" %}
+{% load static %}
+
+{% block content %}
+ 
+            <div class="col-lg-11 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  {% comment %} <h4 class="card-title">Gallery View</h4>
+                  <a href="">
+                    <button class="btn btn-primary">Add Gallery</button>
+                </a> {% endcomment %}
+                
+               
+                  <div class="table-responsive">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>
+                             Name
+                          </th>
+                          
+                         
+                          <th>
+                             Image
+                          </th>
+                       
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                      {% for gallery in gallery %}
+                        <tr>
+                          <td style="width: 150px; ">
+                            {{ gallery.gallery_name }}
+                          </td>
+                          
+                        
+                          <td style="width: 150px; ">
+                            {% if gallery.gallery_image %}
+                            <img src="{{ gallery.gallery_image.url }}" alt="Current Image" style="width: 80px; height: 80px;">
+                            <br>
+                            
+                        {% else %}
+                            <p>No image available</p>
+                        {% endif %}
+                        </td>
+                         
+                          <td style="width: 150px; ">
+                            <a href="{% url 'admin_update_gallery' gallery.id  %}"><button><i class="mdi mdi-cloud-upload" aria-hidden="true"></i> </button></a>
+                          </td>
+                          <td style="width: 150px; ">
+                            <a href="{% url 'admin_delete_gallery' gallery.id  %}"><button><i class="mdi mdi-delete" aria-hidden="true"></i> </button></a>
+                           
+                          </td>
+                        </tr>
+                        {% endfor %}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endblock %}

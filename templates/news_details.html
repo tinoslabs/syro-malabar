@@ -1,0 +1,200 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+		
+		<!--sab banner start-->
+		<div class="sab_banner_wrap overlay">
+			<div class="sub_slider">
+                <div class="banner_slide">
+                    <img src="{% static 'images/3.jpg' %}" alt="">
+                </div>
+                
+            </div>
+            <div class="container">
+				<div class="sab_banner_text">
+					<h3>News Details</h3>
+					<ul class="breadcrumb">
+					  <li><a href="#">News Details</a></li>
+					  <li class="active">News Details</li>
+					</ul>
+					<div class="banner_dots">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--sab banner end-->
+		
+        <div class="content">
+    		<!--church blog detail wrap start-->
+    		<div class="church_blog_detail_wrap wrap_2">
+    			<div class="container">
+    				<div class="row">
+    					<div class="col-md-9">
+    						<!--ch blog detail row start-->
+    						<div class="ch_blog_detail_row post-margin">
+								<!--church blog detail text start-->
+								<div class="church_blog_detail_text">
+									<figure>
+										<!-- Display dynamic main image -->
+										{% comment %} <img src="{{ news_item.main_image.url }}" alt="{{ news_item.news_heading }}"> {% endcomment %}
+										<div class="box_span">
+											<span class="date">{{ news_item.date|date:"d" }}<b>{{ news_item.date|date:"M" }}</b></span>
+											<a href="#" class="date"><i class="fa fa-picture-o" aria-hidden="true"></i></a>
+										</div>
+									</figure>
+									<!-- Display dynamic news heading -->
+									<h3 class="custom-font-30px">{{ news_item.news_heading }}</h3>
+									<ul class="church_meta_date meta_2 meta_3">
+										<li><a href="#">By Admin</a></li>
+										<li><a href="#">{{ news_item.date|date:"F d, Y" }}</a></li>
+										<li><a href="#">23 Comments</a></li>
+										<li><a href="#">132 Likes</a></li>
+									</ul>
+									<!-- Display dynamic description -->
+									<p>{{ news_item.description|safe }}</p>
+									{% comment %} <a href="#" class="default_btn theme-bg_btn">Read More</a> {% endcomment %}
+								</div>
+								<!--church blog detail text end-->
+							</div>
+    						<!--ch blog detail row end-->
+
+    						<!--ch blog detail row start-->
+    						
+    						<!--ch blog detail row end-->
+
+    						<!--ch blog detail row start-->
+    						
+    						<!--ch blog detail row end-->
+
+    						
+
+    						
+    					</div>
+    					<div class="col-md-3">
+    						<div class="widget_sidebar">
+    							<div class="widget_categories">
+    								<h5 class="widget_tittle">Categories</h5>
+    								<ul>
+    									<li><a href="#">Blessing  (23)</a></li>
+    									<li><a href="#">Church Building  (42)</a></li>
+    									<li><a href="#">Wordpress Themes  (11)</a></li>
+    									<li><a href="#">HTML CSS  (33)</a></li>
+    									<li><a href="#">Corporate Templates  (58)</a></li>
+    									<li><a href="#">Faith  (10)</a></li>
+    								</ul>
+    							</div>
+    							
+    							<div class="widget_social">
+    								<h5 class="widget_tittle">Social Widget</h5>
+    								<ul>
+    									<li><a class="orange" href="#"><span><i class="fa fa-twitter"></i></span>RSS feed</a></li>
+    									<li><a class="blue_light" href="#"><span><i class="fa fa-twitter"></i></span>follow us</a></li>
+    									<li><a class="blue" href="#"><span><i class="fa fa-twitter"></i></span>Like us</a></li>
+    									<li><a class="green" href="#"><span><i class="fa fa-twitter"></i></span>follow us</a></li>
+    									<li><a class="pink" href="#"><span><i class="fa fa-twitter"></i></span>follow us</a></li>
+    									<li><a class="red" href="#"><span><i class="fa fa-twitter"></i></span>plus 1 us</a></li>
+    								</ul>
+    							</div>
+    							<div class="widget_events">
+    								<h5 class="widget_tittle">Recent Event</h5>
+    								<ul class="widget_event_slider default_arrows">
+    									<li>
+    										<a  href="" class=""><img src="extra-images/widget_events_img_01.jpg" alt=""></a>
+    										<a  href="" class=""><img src="extra-images/widget_events_img_02.jpg" alt=""></a>
+    										<a  href="" class=""><img src="extra-images/widget_events_img_03.jpg" alt=""></a>
+    										<a  href="" class=""><img src="extra-images/widget_events_img_04.jpg" alt=""></a>
+    										<a  href="" class=""><img src="extra-images/widget_events_img_05.jpg" alt=""></a>
+    										<a  href="" class=""><img src="extra-images/widget_events_img_06.jpg" alt=""></a>
+    									</li>
+    									<li>
+    										<a  href="" class=""><img src="extra-images/widget_events_img_01.jpg" alt=""></a>
+    										<a  href="" class=""><img src="extra-images/widget_events_img_02.jpg" alt=""></a>
+    										<a  href="" class=""><img src="extra-images/widget_events_img_03.jpg" alt=""></a>
+    										<a  href="" class=""><img src="extra-images/widget_events_img_04.jpg" alt=""></a>
+    										<a  href="" class=""><img src="extra-images/widget_events_img_05.jpg" alt=""></a>
+    										<a  href="" class=""><img src="extra-images/widget_events_img_06.jpg" alt=""></a>
+    									</li>
+    									<li>
+    										<a  href="" class=""><img src="extra-images/widget_events_img_01.jpg" alt=""></a>
+    										<a  href="" class=""><img src="extra-images/widget_events_img_02.jpg" alt=""></a>
+    										<a  href="" class=""><img src="extra-images/widget_events_img_03.jpg" alt=""></a>
+    										<a  href="" class=""><img src="extra-images/widget_events_img_04.jpg" alt=""></a>
+    										<a  href="" class=""><img src="extra-images/widget_events_img_05.jpg" alt=""></a>
+    										<a  href="" class=""><img src="extra-images/widget_events_img_06.jpg" alt=""></a>
+    									</li>
+    								</ul>
+    							</div>
+    							<div class="widget_recents_posts">
+    								<h5 class="widget_tittle">Recent Posts</h5>
+    								<div class="footer_blog_post">
+                                        <figure>
+                                            <img src="{% static 'extra-images/widget_posts_img_01.jpg' %}" alt="">
+                                        </figure>
+                                        <div class="footer-post-content">
+                                            <a href="#">Recent Trends Included in Theme</a>
+                                            <span>Dec 12 - 2017</span>
+                                        </div>
+                                    </div>
+                                    <div class="footer_blog_post">
+                                        <figure>
+                                            <img src="{% static 'extra-images/widget_posts_img_02.jpg' %}" alt="">
+                                        </figure>
+                                        <div class="footer-post-content">
+                                            <a href="#">Recent Trends Included in Theme</a>
+                                            <span>Dec 12 - 2017</span>
+                                        </div>
+                                    </div>
+                                    <div class="footer_blog_post">
+                                        <figure>
+                                            <img src="{% static 'extra-images/widget_posts_img_03.jpg' %}" alt="">
+                                        </figure>
+                                        <div class="footer-post-content">
+                                            <a href="#">Recent Trends Included in Theme</a>
+                                            <span>Dec 12 - 2017</span>
+                                        </div>
+                                    </div>
+    							</div>
+    							<div class="widget_writeform">
+    								<h5 class="widget_tittle">Quick Contact</h5>
+    								<form>
+    									<div class="widget-input-text">
+    										<input type="text" placeholder="name">
+    									</div>
+    									<div class="widget-input-text">
+    										<input type="text" placeholder="email address">
+    									</div>
+    									<div class="widget-input-text">
+    										<textarea placeholder="message"></textarea>
+    									</div>
+    									<div class="widget-input-text">
+    										<button class="default_btn black-bg_btn">Send Now</button>
+    									</div>
+    								</form>
+    							</div>
+    							<div class="widget_church_flicker">
+                                        <h5 class="widget_tittle">Popular Tags</h5>
+                                        <ul class="footer_tags">
+                                            <li><a href="">Amazing</a></li>
+                                            <li><a href="">Envato</a></li>
+                                            <li><a href="">Themes</a></li>
+                                            <li><a href="">Clean</a></li>
+                                            <li><a href="">Responsiveness</a></li>
+                                            <li><a href="">SEO</a></li>
+                                            <li><a href="">Mobile</a></li>
+                                            <li><a href="">IOS</a></li>
+                                            <li><a href="">Flat</a></li>
+                                            <li><a href="">Design</a></li>
+                                        </ul>
+                                    </div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    		
+		</div>
+		
+{% endblock %}

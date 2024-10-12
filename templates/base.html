@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+	
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Syro-Malabar Catholic Church</title>
+
+    <!-- Bootstrap -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <!-- Font-awesome -->
+    <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+    <!-- Slick Slider -->
+    <link href="{% static 'css/slick.css' %}" rel="stylesheet">
+    <link href="{% static 'css/fancy_slider.css' %}" rel="stylesheet">
+    <!-- audio.css -->
+    <link href="{% static 'css/audio.css' %}" rel="stylesheet">
+    <!-- Typography -->
+    <link href="{% static 'css/typography.css' %}" rel="stylesheet">
+    <!-- widget.css -->
+    <link href="{% static 'css/widget.css' %}" rel="stylesheet">
+    <!-- selectric.css -->
+    <link href="{% static 'css/selectric.css' %}" rel="stylesheet">
+    <!-- svg-icons.css -->
+    <link href="{% static 'css/svg-icons.css' %}" rel="stylesheet">
+    <!-- component-responsive.css -->
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+    <!-- shortcodes.css -->
+    <link href="{% static 'css/shortcodes.css' %}" rel="stylesheet">
+    <!-- colors.css -->
+    <link href="{% static 'css/colors.css' %}" rel="stylesheet">
+    <!-- style.css -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+  </head>
+  <body class="bg_none">
+
+    <!--church wrapper-->
+    <div class="wrapper">
+        <!--church header-->
+        <header class="header_version_2">
+            <div class="container">
+                <!--church logo-->
+                <div class="church_logo">
+                    <h1><a href="{% url 'index' %}"><img src="{% static 'images/logo.jpg' %}" alt="church logo"></a></h1>
+                </div>
+                <!--church logo ends-->
+
+                <div id="kode-responsive-navigation" class="dl-menuwrapper">
+                        <button class="dl-trigger">Menu</button>
+                        <ul class="dl-menu">
+                            <li class="active"><a class="active" href="{% url 'index' %}">Home</a>
+                                
+                            </li>
+                            <li class="menu-item"><a href="{% url 'index' %}#about-section">About Us</a>
+                                
+                            </li>
+                            <li class="menu-item"><a href="{% url 'masses' %}">Masses</a>
+                            </li>
+                            <li class="menu-item"><a href="{% url 'administration' %}">Administration</a>
+                            </li>
+                            
+                            <li class="menu-item"><a href="{% url 'gallery' %}">Gallery</a>
+                                
+                            </li>
+                            <li class="menu-item"><a href="{% url 'blog' %}">Blog</a>
+                                
+                            </li>
+                            
+                            <li><a href="{% url 'contact' %}">contact us</a></li>
+                        </ul>
+                    </div>
+                    <!--Responsive Menu END-->
+                <!--church menus-->
+                <div class="church_menu_row">
+                    <!--church social navigation menu-->
+                    <div class="church_navigation">
+                        <nav class="navigation">                                                     
+                            <ul>
+                                <li><a href="{% url 'index' %}">Home</a>
+                                    
+                                </li>
+								<li><a href="{% url 'index' %}#about-section">About Us</a>
+                                    
+                                </li>
+                                <li><a href="{% url 'masses' %}">Masses</a>
+                                    
+                                </li>
+                                <li><a href="{% url 'administration' %}">Administation</a>
+                                    
+                                </li>
+                                <li><a href="{% url 'gallery' %}">Gallery</a>
+                                    
+                                </li>
+                                <li><a href="{% url 'blog' %}">Blog</a>
+                                    
+                                </li> 
+                                <li><a href="{% url 'contact' %}">Contact Us</a>
+                                    
+                                </li>
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--church cart menu-->
+                    {% comment %} <div class="cart_items_show">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div> {% endcomment %}
+                     
+                </div>            
+            </div>
+        </header>
+        {% block content%}
+
+        {% endblock %}
+
+        <footer>
+            <div class="slider_images">
+                <div class="item_images">
+                    <a href="{% url 'gallery' %}">
+                        <img src="{% static 'images/2.jpg' %}" alt="">
+                        <i class="fa fa-instagram" ></i>
+                    </a>
+                </div>
+                <div class="item_images">
+                    <a href="{% url 'gallery' %}">
+                        <img src="{% static 'images/5.jpg' %}" alt="">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="item_images">
+                    <a href="{% url 'gallery' %}">
+                        <img src="{% static 'images/3.jpg' %}" alt="">
+                        <i class="fa fa-instagram" ></i>
+                    </a>
+                </div>
+                <div class="item_images">
+                    <a href="{% url 'gallery' %}">
+                        <img src="{% static 'images/8.jpg' %}" alt="">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="item_images">
+                    <a href="{% url 'gallery' %}">
+                        <img src="{% static 'images/6.jpg' %}" alt="">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="item_images">
+                    <a href="{% url 'gallery' %}">
+                        <img src="{% static 'images/7.jpg' %}" alt="">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="item_images">
+                    <a href="{% url 'gallery' %}">
+                        <img src="{% static 'images/8.jpg' %}" alt="">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="item_images">
+                    <a href="{% url 'gallery' %}">
+                        <img src="{% static 'images/9.jpg' %}" alt="">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="item_images">
+                    <a href="{% url 'gallery' %}">
+                        <img src="{% static 'images/10.jpg' %}" alt="">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="item_images">
+                    <a href="{% url 'gallery' %}">
+                        <img src="{% static 'images/11.jpg' %}" alt="">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="item_images">
+                    <a href="{% url 'gallery' %}">
+                        <img src="{% static 'images/12.jpg' %}" alt="">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="item_images">
+                    <a href="{% url 'gallery' %}">
+                        <img src="{% static 'images/13.jpg' %}" alt="">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+			<style>
+				.slider_images {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-around;
+				}
+				
+				{% comment %} .item_images {
+					width: 25%; /* Adjust width as needed */
+					padding: 10px;
+					box-sizing: border-box;
+				} {% endcomment %}
+				
+				.item_images img {
+					width: 100%;
+					height: 200px; /* Set a fixed height */
+					object-fit: cover; /* Ensures image is cropped nicely while maintaining aspect ratio */
+				}
+				
+				.item_images a {
+					display: block;
+					position: relative;
+				}
+				
+				{% comment %} .item_images i {
+					position: absolute;
+					bottom: 10px;
+					right: 10px;
+					color: #fff;
+					font-size: 24px;
+				} {% endcomment %}
+			</style>
+            <div class="footer_board">
+                <div class="container">
+                    <div class="background-logos">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="footer_detail">
+                                    <h4 class="footer_title">Divine Church</h4>
+                                    <p>The Syro-Malabar Catholic Church is one of 22 Eastern (Oriental) Catholic Churches in full communion with the Vatican.It is the second largest Eastern Catholic Church after the Ukrainian Church and with 4.6 million believers, is the largest of the Saint Thomas Christian (Nazrani) denominations.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="footer_blog">
+                                    <h4 class="footer_title">Usefull Links</h4>
+                                    <div class="footer_blog_post padding-top-0">
+                                       
+                                        <div class="footer-post-content">
+                                            <a href="{% url 'blog' %}">Blog</a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="footer_blog_post">
+                                       
+                                        <div class="footer-post-content">
+                                            <a href="{% url 'gallery' %}">Gallery</a>
+                                            
+                                        </div>
+                                    </div>
+									<div class="footer_blog_post">
+                                       
+                                        <div class="footer-post-content">
+                                            <a href="{% url 'contact' %}">Contact Us</a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-md-4">
+                                <div class="footer_blog">
+                                    <h4 class="footer_title">Our Address</h4>
+                                    {% comment %} <p>Nlis euismod mollis. Nullam con euismod mol.Nullam convallis euismod mollis.</p>
+                                    <span><i class="fa fa-envelope" aria-hidden="true"></i>Info@example.com</span>
+                                    <span><i class="fa fa-location-arrow" aria-hidden="true"></i>Joseph Colony, Allen Street New York</span>
+                                    <span><i class="fa fa-phone" aria-hidden="true"></i>+123456789</span> {% endcomment %}
+                                </div>
+                            </div>       
+                        </div>
+                    </div>
+                    {% comment %} <div class="footer_twitter">
+                        <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                        <div class="footer_twitter_caption">
+                            <p>Proin dapibus dapibus nunc, sit amet scelerisque est imperdiet tristique. Sed lobortis metus ut consequat,.<a href="">pikdfjsoamjdh</a></p>
+                            <small>2 Hours Ago</small>
+                        </div>
+                        <div class="pull-right"><a href="#" class="default_btn black-bg_btn">Follow us</a></div>
+                    </div> {% endcomment %}
+                    <div class="footer_other_sections">
+                        {% comment %} <div class="row">
+                            <div class="col-md-4">
+                                <div class="church_flicker">
+                                    <h4 class="footer_title">Flickr Feed</h4>
+                                    <ul class="church_flicker_gallery">
+                                        <li><a href="#"><img src="{% static 'extra-images/flicker_img01.jpg' %}" alt=""></a></li>
+                                        <li><a href="#"><img src="{% static 'extra-images/flicker_img02.jpg' %}" alt=""></a></li>
+                                        <li><a href="#"><img src="{% static 'extra-images/flicker_img03.jpg' %}" alt=""></a></li>
+                                        <li><a href="#"><img src="{% static 'extra-images/flicker_img04.jpg' %}" alt=""></a></li>
+                                        <li><a href="#"><img src="{% static 'extra-images/flicker_img05.jpg' %}" alt=""></a></li>
+                                        <li><a href="#"><img src="{% static 'extra-images/flicker_img06.jpg' %}" alt=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="church_flicker">
+                                    <h4 class="footer_title">Latest Prayers</h4>
+                                    <div class="footer_blog_post padding-top-0">
+                                        <figure>
+                                            <img src="{% static 'extra-images/footer_post_img_04.png' %}" alt="">
+                                        </figure>
+                                        <div class="footer-post-content">
+                                            <a href="#">Lorem ipsum dolor sit amet, co sectetur</a>
+                                            <span><i class="fa fa-clock-o" aria-hidden="true"></i>4 April 2017</span>
+                                        </div>
+                                    </div>
+                                    <div class="footer_blog_post">
+                                        <figure>
+                                            <img src="{% static 'extra-images/footer_post_img_04.png' %}" alt="">
+                                        </figure>
+                                        <div class="footer-post-content">
+                                            <a href="#">Lorem ipsum dolor sit amet, co sectetur</a>
+                                            <span><i class="fa fa-clock-o" aria-hidden="true"></i>4 April 2017</span>
+                                        </div>
+                                    </div>
+                                    <div class="footer_blog_post">
+                                        <figure>
+                                            <img src="{% static 'extra-images/footer_post_img_04.png' %}" alt="">
+                                        </figure>
+                                        <div class="footer-post-content">
+                                            <a href="#">Lorem ipsum dolor sit amet, co sectetur</a>
+                                            <span><i class="fa fa-clock-o" aria-hidden="true"></i>4 April 2017</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="church_flicker">
+                                    <h4 class="footer_title">Tags</h4>
+                                    <ul class="footer_tags">
+                                        <li><a href="">Church</a></li>
+                                        <li><a href="">Religious</a></li>
+                                        <li><a href="">Real Belief</a></li>
+                                        <li><a href="">Real Path</a></li>
+                                        <li><a href="">Divine Way</a></li>
+                                        <li><a href="">Amen</a></li>
+                                        <li><a href="">Sympathy</a></li>
+                                        <li><a href="">Rightousnes</a></li>
+                                        <li><a href="">Pray</a></li>
+                                        <li><a href="">Prayers</a></li>
+                                        <li><a href="">Love</a></li>
+                                        <li><a href="">Struggle</a></li>
+                                        <li><a href="">Divinity</a></li>
+                                        <li><a href="">Sweet Love</a></li>
+                                        <li><a href="">Ways</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> {% endcomment %}
+                    </div>
+                </div>
+
+                
+            </div>
+        </footer>
+		
+		<div class="copyright-content center">
+			<div class="container">
+				<p><i class="fa fa-copyright" aria-hidden="true"></i>All Rights Reserved to <a href="index.html">KodeForest</a>.</p>
+			</div>
+		</div>
+		
+        <!--video deta-->
+        <div id="v1" class="videos_play_modal modal fade" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="default_vides_playblack">
+                        <button type="button" class="close" data-dismiss="modal controls=1">&times;</button>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/XYi75x-ZvGE?autoplay=0&controls=1&loop=1&playlist=8HSr8BjcufM&amp;showinfo=0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--video deta ends-->
+        
+	</div>
+    <!--church wrapper ends-->
+
+
+    <!-- jquery javascript-->
+    {% comment %} <script src="{% static 'js/jquery.js' %}"></script>
+  
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+   
+    <script src="{% static 'js/modernizr.js' %}"></script>
+    
+    <script src="{% static 'js/responsive-jquery.js' %}"></script>
+    
+    <script src="{% static 'js/audio.js' %}"></script>
+    
+    <script src="{% static 'js/slick.js' %}"></script>
+    <script src="{% static 'js/slider_fancy.js' %}"></script>
+    <script src="{% static 'js/accordian.js' %}"></script>
+    <script src="{% static 'js/selectric.js' %}"></script>
+    <script src="{% static 'js/imgslider.min.js' %}"></script>
+    
+    <script src="{% static 'js/custom.js' %}"></script> {% endcomment %}
+	<script src="{% static 'js/jquery.js' %}"></script> <!-- jQuery first -->
+	<script src="{% static 'js/bootstrap.js' %}"></script> <!-- Then Bootstrap -->
+	<!-- Other libraries -->
+	<script src="{% static 'js/modernizr.js' %}"></script>
+	<script src="{% static 'js/responsive-jquery.js' %}"></script>
+	<script src="{% static 'js/audio.js' %}"></script>
+	<script src="{% static 'js/slick.js' %}"></script>
+	<script src="{% static 'js/slider_fancy.js' %}"></script>
+	<script src="{% static 'js/accordian.js' %}"></script>
+	<script src="{% static 'js/selectric.js' %}"></script>
+	<script src="{% static 'js/imgslider.min.js' %}"></script>
+
+	<!-- Finally, Custom Scripts -->
+	<script src="{% static 'js/custom.js' %}"></script>
+
+  </body>
+</html>

@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %} 
+
+        <div class="sab_banner_wrap overlay">
+            <div class="sub_slider">
+                <div class="banner_slide">
+                    <img src="{% static 'images/3.jpg' %}" alt="">
+                </div>
+            
+            </div>
+            <div class="container">
+            <br><br>
+                <div class="sab_banner_text">
+                    <h3>Masses</h3>
+                    <ul class="breadcrumb">
+                    <li class="active">Masses</li>
+                    </ul>
+                    <div class="banner_dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="content">
+
+           
+
+            <section class="padding">
+                <div class="church_lastest_events">
+                    <div class="container">
+                        <div class="church_heading align_center">
+                            <h3>Masses</h3>
+                            <span><sup class="icon-cross"></sup></span>
+                        </div>
+                        <div class="row">
+                            {% for mass in masses %}
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="church_event_blog">
+                                        <div class="church_listing_block">
+                                            <figure>
+                                                <img src="{{ mass.main_image.url }}" alt="{{ mass.Mass_Name }}">
+                                                <div class="church_date">
+                                                    <span>{{ mass.date|date:"d" }}<b>{{ mass.date|date:"F" }}</b></span>
+                                                </div>
+                                            </figure>
+                                            <div class="church_listing_caption">
+                                                <div>
+                                                    <h4>{{ mass.Mass_Name }}</h4>
+                                                    <p>{{ mass.description }}</p>
+                                                </div>
+                                                <ul class="meta_address">
+                                                    <li><i class="fa fa-map-marker" aria-hidden="true"></i>{{ mass.place }}</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+            
+           
+
+            
+            
+        </div>
+        {% endblock %}
