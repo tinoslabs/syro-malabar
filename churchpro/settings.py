@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-&k15m$t4o*&znjh=_ffw!(5cwofj+w3uxs5jpxkbfsgokm$=3e
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['syro-malabar.onrender.com']
+# ALLOWED_HOSTS = ['syro-malabar.onrender.com']
 
 # Application definition
 
@@ -139,6 +139,8 @@ STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Default primary key field type
