@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-&k15m$t4o*&znjh=_ffw!(5cwofj+w3uxs5jpxkbfsgokm$=3e
 DEBUG = True
 
 
-# ALLOWED_HOSTS = ['syro-malabar.onrender.com']
+ALLOWED_HOSTS = ['syro-malabar.onrender.com']
 
 # Application definition
 
