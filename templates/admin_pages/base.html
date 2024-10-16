@@ -167,6 +167,24 @@
       </div>
     </li>
 
+    <li class="nav-item nav-category">Add Events</li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="collapse" href="#event" aria-expanded="false"
+        aria-controls="form-elements">
+        <i class="menu-icon mdi mdi-card-text-outline"></i>
+        <span class="menu-title">Add Events</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="event">
+        <ul class="nav flex-column sub-menu">
+
+          <li class="nav-item"><a class="nav-link" href="{% url 'create_event' %}">Add Event </a></li>
+          <li class="nav-item"><a class="nav-link" href="{% url 'view_event' %}">View Event </a></li>
+
+        </ul>
+      </div>
+    </li>
+
     <li class="nav-item nav-category">Blog</li>
     <li class="nav-item">
       <a class="nav-link" data-bs-toggle="collapse" href="#blog" aria-expanded="false"
@@ -198,6 +216,24 @@
 
           <li class="nav-item"><a class="nav-link" href="{% url 'create_masses' %}">Add Masses </a></li>
           <li class="nav-item"><a class="nav-link" href="{% url 'masses_view' %}">View Masses </a></li>
+
+        </ul>
+      </div>
+    </li>
+
+    <li class="nav-item nav-category">About Video</li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="collapse" href="#about" aria-expanded="false"
+        aria-controls="form-elements">
+        <i class="menu-icon mdi mdi-card-text-outline"></i>
+        <span class="menu-title">About Video</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="about">
+        <ul class="nav flex-column sub-menu">
+
+          <li class="nav-item"><a class="nav-link" href="{% url 'add_about_video' %}">Add About Video </a></li>
+          <li class="nav-item"><a class="nav-link" href="{% url 'admin_view_video' %}">View About Video </a></li>
 
         </ul>
       </div>

@@ -37,6 +37,11 @@ urlpatterns = [
     path('update_news/<int:id>', views.update_news, name='update_news'),
     path('delete_news/<int:id>', views.delete_news, name='delete_news'),
     
+    path('create_event', views.create_event, name='create_event'),
+    path('view_event', views.view_event, name='view_event'),
+    path('update_event/<int:id>', views.update_event, name='update_event'),
+    path('delete_event/<int:id>', views.delete_event, name='delete_event'),
+    
     path('create_blog', views.create_blog, name='create_blog'),
     path('blog_view', views.blog_view, name='blog_view'),
     path('update_blog/<int:id>', views.update_blog, name='update_blog'),
@@ -47,6 +52,10 @@ urlpatterns = [
     path('update_masses/<int:id>', views.update_masses, name='update_masses'),
     path('delete_masses/<int:id>', views.delete_masses, name='delete_masses'),
     
+    path('add_about_video', views.add_about_video, name='add_about_video'),
+    path('admin_view_video', views.admin_view_video, name='admin_view_video'),
+    path('update_video_link/<int:id>/',views.update_video_link, name='update_video_link'),
+    path('delete_video/<int:id>/',views.delete_video, name='delete_video'),
  
     path('about', views.about,name='about'),
     path('gallery', views.gallery, name='gallery'),
@@ -57,10 +66,12 @@ urlpatterns = [
     
     
     
-   path('masses', views.masses, name='masses'),
+    path('mass',views.mass, name='mass'),
+    path('event',views.event, name='event'),
     
-    
+    path('wish', views.wish, name='wish'),
     
     path('news_details/<int:id>/', views.news_details, name='news_details'),
+    # path('blog_details/<int:id>/', views.blog_details, name='blog_details')
     path('blog_details/<int:id>/', views.blog_details, name='blog_details')
 ]

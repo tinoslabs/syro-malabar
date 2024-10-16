@@ -1,5 +1,5 @@
 from django import forms
-from .models import Administration,NewsModel,GalleryModel,EnquiryModel,BlogModel,MassesModel
+from .models import Administration,NewsModel,GalleryModel,EnquiryModel,BlogModel,MassesModel,EventModel,AboutModel
 
 
 class Administration_Form(forms.ModelForm):
@@ -31,4 +31,15 @@ class MassForm(forms.ModelForm):
 class BlogForm(forms.ModelForm):
     class Meta:
         model = BlogModel
+        fields = '__all__'
+        
+class EventForm(forms.ModelForm):
+    class Meta:
+        model = EventModel
+        fields = '__all__'
+        
+        
+class AboutForm(forms.ModelForm):
+    class Meta:
+        model = AboutModel
         fields = '__all__'
