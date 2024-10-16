@@ -167,7 +167,7 @@
                             <div class="col-md-12">
                                 <div class="page-title-inner">
 									<div id="breadcrumb" class="breadcrumb margin-bottom-10">
-                                        <a href="index.html" class="theme-color">Home</a>
+                                        <a href="{% url 'index' %}" class="theme-color">Home</a>
                                         <span class="current">Contact Us</span>
                                     </div>
                                     <h1 class="page-title mb-0">Contact Us</h1>
@@ -338,7 +338,7 @@
     <!--page-wrapper-->
 
     <!-- Footer -->
-    <footer id="footer" class="footer footer-1 footer-bg-img" data-bg="{% static 'images/bg/footer-bg.jpg' %}">
+    <footer id="footer" class="footer footer-1 footer-bg-img" data-bg="{% static 'images/12.jpg' %}">
         <!--Footer Widgets Columns Posibilities 4-->
         
         <div class="footer-widgets">
@@ -432,19 +432,19 @@
                             <ul class="footer-bottom-items pull-left">
                                 <li class="nav-item">
                                     <div class="nav-item-inner">
-                                        Copyrights  © 2022 <a href="index.html">Zegen</a>. Designed by <a href="http://zozothemes.com/">Zozothemes</a><span class="heart-color">♥</span>
+                                       Designed by <a href="https://tinos.co.in/">Tinos</a><span class="heart-color">♥</span>
                                     </div>
                                 </li>
                             </ul>
                             <ul class="footer-bottom-items footer-menu pull-right">
-                                <li class="nav-item">               
+                                {% comment %} <li class="nav-item">               
                                     <a href="#">Privacy</a>
                                 </li>
 								<li class="nav-item">               
-                                    <a href="#">Sermons</a>
-                                </li>
+                                    <a href="">Sermons</a>
+                                </li> {% endcomment %}
 								<li class="nav-item">               
-                                    <a href="#">Contact Us</a>
+                                    <a href="{% url 'contact' %}">Contact Us</a>
                                 </li>
                             </ul>
                         </div>
