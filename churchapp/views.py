@@ -3,8 +3,8 @@ from django.shortcuts import render,redirect,get_object_or_404,HttpResponse
 
 # Create your views here.
 from django.contrib import messages
-from .models import Administration,NewsModel,GalleryModel,EnquiryModel,BlogModel,MassesModel
-from .forms import Administration_Form,NewsForm,GalleryForm,EnquiryForm,BlogForm,MassForm
+from .models import Administration,NewsModel,GalleryModel,EnquiryModel,BlogModel,MassesModel,EventModel,AboutModel
+from .forms import Administration_Form,NewsForm,GalleryForm,EnquiryForm,BlogForm,MassForm,EventForm,AboutForm
 # from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth import authenticate, login as django_login, logout
 from django.contrib.auth.decorators import login_required
@@ -24,6 +24,7 @@ from django.contrib import messages
 #             print("Invalid login attempt")  
 #             return redirect('user_login')
 #     return render(request, 'authenticate/login.html')
+
 def user_login(request):
     if request.method == "POST":
         username = request.POST['username']
@@ -37,6 +38,7 @@ def user_login(request):
             print("Invalid login attempt")  # Debug print
             return redirect('user_login')
     return render(request, 'authenticate/login.html')
+
 
 @login_required(login_url='user_login')
 def admin_dashboard(request):
@@ -210,6 +212,79 @@ def delete_news(request,id):
     news.delete()
     return redirect('news_view')
 
+
+def create_event(request):
+    if request.method == 'POST':
+        form = EventForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('view_event')
+        else:
+            print(form.errors)  # Print form errors to console
+    else:
+        form = EventForm()
+
+    return render(request, 'admin_pages/create_event.html', {'form': form})
+
+def view_event(request):
+    event = EventModel.objects.all().order_by('-id')
+    return render(request,'admin_pages/view_event.html',{'event':event})
+
+def update_event(request, id):
+    event = get_object_or_404(EventModel, id=id)
+
+    if request.method == 'POST':
+        form = EventForm(request.POST, request.FILES, instance=event)
+        if form.is_valid():
+            form.save()
+            return redirect('view_event')
+    else:
+        form = EventForm(instance=event)
+
+    return render(request, 'admin_pages/update_event.html', {'form': form,'event':event})
+
+def delete_event(request,id):
+    event = EventModel.objects.get(id=id)
+    event.delete()
+    return redirect('view_event')
+
+
+@login_required(login_url='user_login')
+def add_about_video(request):
+    if request.method == 'POST':
+        form = AboutForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('admin_view_video') 
+    else:
+        form = AboutForm()
+    return render(request, 'admin_pages/add_about_video.html', {'form': form})
+
+@login_required(login_url='user_login')
+def admin_view_video(request):
+    about = AboutModel.objects.all().order_by('-id')
+    return render(request,'admin_pages/admin_view_video.html',{'about':about})  
+
+
+@login_required(login_url='user_login')
+def update_video_link(request,id):
+    about = get_object_or_404(AboutModel, id=id)
+    if request.method == 'POST':
+        form = AboutForm(request.POST, request.FILES, instance=about)
+        if form.is_valid():
+            form.save()
+            return redirect('admin_view_video')
+    else:
+        form = AboutForm(instance=about)
+    return render(request, 'admin_pages/update_video_link.html', {'form': form, 'about': about})
+
+
+@login_required(login_url='user_login')
+def delete_video(request,id):
+    about = AboutModel.objects.get(id=id)
+    about.delete()
+    return redirect('admin_view_video')
+
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.core.files.storage import default_storage
@@ -276,19 +351,20 @@ def delete_blog(request,id):
 
 
 def index(request):
+    video = AboutModel.objects.all()
     news = NewsModel.objects.all()
     blog = BlogModel.objects.all()
     gallery = GalleryModel.objects.all()
     administration_team = Administration.objects.all()
     masses = MassesModel.objects.all()
-    return render(request,'index.html',{'news':news,'blog':blog,'gallery':gallery,'administration_team':administration_team,'masses':masses})
+    return render(request,'index.html',{'news':news,'video':video,'blog':blog,'gallery':gallery,'administration_team':administration_team,'masses':masses})
 
 def about(request):
     return render(request,'about-us.html')
 
 def gallery(request):
-    images = GalleryModel.objects.all()
-    return render(request,'gallery.html',{'images':images})
+    gallery = GalleryModel.objects.all()
+    return render(request,'gallery.html',{'gallery':gallery})
 
 def contact(request):
     if request.method == 'POST':
@@ -299,7 +375,7 @@ def contact(request):
             messages.success(request, 'Comment Submitted Successfully!!!!!')
     else:
         form = EnquiryForm()
-    return render(request,'contact_us.html',{'form':form})
+    return render(request,'contact.html',{'form':form})
 
 def administration(request):
     administration_team = Administration.objects.all()
@@ -315,11 +391,19 @@ def news_details(request, id):
 
 def blog_details(request, id):
     blog = get_object_or_404(BlogModel, id=id)
-    return render(request, 'blog_details.html', {'blog': blog})
+    return render(request, 'blog-details.html', {'blog': blog})
+
 
 def login(request):
     return render(request,'accounts/login.html')
 
-def masses(request):
-    masses = MassesModel.objects.all()
-    return render(request, 'masses.html', {'masses': masses})
+def mass(request):
+    mass = MassesModel.objects.all()
+    return render(request,'masses.html',{'mass':mass})
+
+def event(request):
+    return render(request,'events.html')
+
+def wish(request):
+    return render(request,'wish.html')
+

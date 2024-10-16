@@ -1,428 +1,532 @@
-/*
-======================================================
-    CHURCH PROJECT VERSION 1.1
-=======================================================
-    Created BY KODEFOREST Date 5/12/2017 
-======================================================
+/* =============================================== */
+/* ---------------->>> COLORS STYLES <<<------------- */
+/* ================================================ */ 
 
-    ! COLORS .CSS
-
-======================================================
-
-*/
-
-
-/*
-color:#a82248;
-
-*/
-
-
-
-.church_container_version2 .volume-adjust > div > div,
-.language_changer .selectric-items li:hover{
+/* Zmm Wrapper */
+.close:before, .close:after {
+	background-color: #bf0a30;
+}
+.form-control:focus,
+.search-form-wrapper .form-control:focus,
+.overlay-search .search-form-wrapper .form-control:focus {
+    border-color: #bf0a30 !important;
+}
+/* Page Title */
+.page-title-wrap:before {
+    background: #bf0a30;
+}
+/*Link Colors*/
+a:hover, a:active, a:focus, .post-meta li a:hover,
+.nav.author-social>li>a:hover {
+	color: #bf0a30;
+}
+.post-comments span.author:before, 
+.post-comments span.date:before, 
+a.comment-reply-link i, .blog-link .link:hover,
+.zig-zag-col .entry-meta i {
+    color: #bf0a30;
+}
+/*Bg Dark Colors*/
+.bg-theme {
+    background: #bf0a30;
+}
+.bg-semi-transparent-dark ul.nav.navbar-main > li > a:hover, 
+.bg-semi-transparent-dark .mega-dropdown .dropdown-menu > li > ul > li > a:hover,
+.bg-transparent.typo-white ul.nav.navbar-main > li > a:hover {
+	color: #bf0a30;
+}
+.bg-1 {
+    background-color: #00162FEB;
+}
+.bg-2 {
+    background-color: #BF0A30D9;
+}
+.bg-3 {
+    background-color: #00162F;
+}
+/* Topbar Colors */
+.topbar a:hover, .topbar a:hover i, .header-1 .topbar.typo-white a:hover,
+.error-page > h1 {
+    color: #bf0a30;
+}
+.topbar.top-bar-bg-color {
+    background: #bf0a30;
+}
+/* Logobar Colors */
+.logobar .header-info a:hover {
+    color: #bf0a30;
+}
+/*Main Menu Colors*/
+.navbar ul.nav.navbar-main > li > a:hover, .navbar ul.nav.navbar-main > li.active > a,
+ul.nav.navbar-main.theme-main-menu > li > a.active, .navbar ul.nav.navbar-main.menu-white > li.active > a, .bg-dark .dropdown-menu > li.active > a,
+.dropdown-menu > li.active > a, .navbar ul.nav.navbar-main.menu-white > li.active > a:hover, 
+.header-sticky .navbar ul.nav.navbar-main.menu-white > li.active > a {
+	color: #bf0a30;
+}
+.mega-dropdown .dropdown-menu > li > ul > li > a:hover,
+.bg-dark .mega-dropdown .dropdown-menu > li > ul > li > a:hover,
+.sticky-main-wrapper ul.nav.navbar-nav > li > a:hover,
+.sticky-main-wrapper ul.nav.navbar-nav > li.active > a,
+.bg-dark .dropdown-menu > li > a:hover, .zmm-wrapper .zmm-dropdown-toggle {
+	color: #bf0a30;
+}
+.bg-dark .search-form .search-btn,
+.search-form .search-btn {
+	background: #bf0a30;
+}
+footer.bg-light a:hover, footer.bg-dark a:hover,
+footer.bg-overlay-dark a:hover, footer.bg-overlay-light a:hover,
+.sidebar .recent-posts .list-post a:hover,
+.sidebar .popular-posts .list-post a:hover {
+	color: #bf0a30;
+}
+/*Theme Colors*/
+.theme-color, 
+.typo-white .theme-color,
+.typo-dark .theme-color {
+	color: #bf0a30;
+}
+.themeh-color, 
+.typo-white .themeh-color,
+.typo-dark .themeh-color {
+	color: #bf0a30;
+}
+/*Gradient Colors*/
+.gradient-bg {
+    background: -webkit-linear-gradient(56deg, #3380de 35%, #bf0a30 65%);
+    background: linear-gradient(56deg, #3380de 35%, #bf0a30 65%);
+}
+.pricing-table-wrapper.pricing-style-1:hover .pricing-table-head, 
+.pricing-table-active.pricing-table-wrapper.pricing-style-1 .pricing-table-head {
+    background: -webkit-linear-gradient(-172deg, #3380de 35%, #bf0a30 65%);
+    background: linear-gradient(-172deg, #3380de 35%, #bf0a30 65%);
+}
+.pricing-style-1:hover .pricing-inner-wrapper > *:nth-child(2), .pricing-table-active.pricing-style-1 .pricing-inner-wrapper > *:nth-child(2),
+.pricing-style-1 .btn-default:hover {
+    background: -webkit-linear-gradient(-180deg, #3380de 40%, #bf0a30 90%) !important;
+    background: linear-gradient(-180deg, #3380de 40%, #bf0a30 90%) !important;
+}
+.blog-list-style-1 .blog-thumb:before,
+.blog-list-style-2 .blog-thumb:before {
+	background: linear-gradient(to bottom, rgba(51,128,222,0.8) 0%, rgba(0,96,214,0.8) 75%);
+    background: -webkit-linear-gradient(to bottom, rgba(51,128,222,0.8) 0%, rgba(0,96,214,0.8) 75%);
+    background: -moz-linear-gradient(to bottom, rgba(51,128,222,0.8) 0%, rgba(0,96,214,0.8) 75%);
+}
+.cobbles-overlay-wrap:before {
+    background: -webkit-linear-gradient(-150deg, #3380de 35%, #bf0a30 65%);
+    background: linear-gradient(-150deg, #3380de 35%, #bf0a30 65%);
+}
+.ministries-box-style-1 .ministries-icon {
+    background: -webkit-linear-gradient(-150deg, #3380de 35%, #bf0a30 65%);
+    background: linear-gradient(-150deg, #3380de 35%, #bf0a30 65%);
+}
+.team-style-2 .team-overlay .team-thumb:before {
+	background: linear-gradient(to bottom, rgba(51,128,222,0.8) 0%, rgba(0,96,214,0.8) 75%);
+    background: -webkit-linear-gradient(to bottom, rgba(51,128,222,0.8) 0%, rgba(0,96,214,0.8) 75%);
+    background: -moz-linear-gradient(to bottom, rgba(51,128,222,0.8) 0%, rgba(0,96,214,0.8) 75%);
+}
+/*Hover Colors*/
+.bg-dark a:hover, .typo-dark a:hover {
+	color: #bf0a30;
+}
+.typo-dark .btn:hover, .bg-dark .btn:hover {
 	color: #fff;
 }
-
-.block_services li:hover .heading_title a,
-div.dl-menuwrapper li a:hover:after, 
-.no-touch div.dl-menuwrapper li a:hover,
-.footer_twitter_caption p a,
-.chu_prayer_columns:hover .prayer_icons_styles div > a,
-.widget_recents_posts .footer-post-content span,
-.post-content h6 a:hover,
-.date,
-.our_team_services .social-icons li a,
-.church_causes_post:hover .church_causes_content a,
-.church_causes_post:hover .church_causes_content h4 a,
-.player_caption p a,
-.align_center span sup,
-.church_heading h3:before,
-.timeHolder *,
-/*===============================================*/
-.widget_categories ul li a:hover:before,
-.widget_categories ul li a:hover,
-.churech_author.comment h5,
-.ch_share_meta span i,
-.ch_share_meta span a,
-.churech_author_head  span,
-.blockquote_text a,
-.breadcrumb li a:hover,
-.post_fig_text > h6 a:hover,
-.copyright-content.center p a:hover,
-.post_comment a:hover,
-.church_postor_text h4,
-.church_causes_fig > h4 a:hover,
-.church_meta_date.meta_2 li a:hover,
-.church_heading.align_center.color span sup,
-/*===============================================*/
-.comingsoon_content_caption span,
-.content_caption_404 h3,
-.audioplayer .volume-btn:before,
-.audioplayer .controls .pause:before,
-.audioplayer .controls .play:before,
-.church_caption_blog:hover h4 a,
-.open_services:hover span,
-.open_services:hover .open_services_content h5 a,
-.church_countdown_timer small,
-.header_version_2 .navigation ul li ul.children li:hover a,
-.header_version_2 .navigation ul li ul.sub-menu li:hover a,
-.navigation > li:hover a,
-#playlist:before,
-.ch_product_star li a:hover,
-.church_blog_footer li a:hover,
-.church_music_book .meta_address li a:hover,
-.velues_adds .controls li *,
-.church_container_version2 .audioplayer .volume-btn:before,
-.church_container_version2 .audioplayer .controls .pause:before, 
-.church_container_version2 .audioplayer .controls .play:before,
-.church_container_version2 .audioplayer .time-current,
-.church_container_version2 .audioplayer .time-duration,
-.church_login_services li a i,
-.item_images a i:hover,
-.language_changer .selectric-items li.selected,
-.church_accounts_language li a i{
-	color:#c62641;
+/* Hover Bg Colors*/
+.hvr-theme:hover {
+	background-color: #bf0a30;
 }
-
-
-
-.pagination span:hover,
-.pagination a:hover,
-.arrows_redios .slick-arrow:hover,
-.widget_church_flicker .footer_tags li:hover a,
-.header_version_6,
-.church_version_overflow .container,
-.footer_title:before,
-.soft_column:hover,
-.align_center span:after,
-.align_center span:before,
-.church_heading h3:after,
-.nav-arrows a,
-.progressbar,
-.social-icons_list li:hover,
-.audioplayer .controls .pause:before,
-.audioplayer .controls .play:before,
-.audioplayer .player .progressbar .bar-loaded,
-/*===============================================*/
-.ch_textarea textarea:focus,
-.kf_commet_field input:focus,
-.blockquote_text a:before,
-.breadcrumb,
-.align_center span:after, 
-.align_center span:before,	
-.church_text  h3:before,
-.block_services li:hover span,
-/*===============================================*/
-.chu_progress_causes .skillbar1-bar span,
-.open_services:hover span,
-.default_arrows .slick-arrow:hover:before,
-.header_version_2 .church_navigation .navigation li:hover a:before,
-.header_version_2 > .container,
-.velues_adds .controls li,
-.church_ourshop_content,
-.slick-dots li:hover button,
-.ch_testimonial_item.slick-slide.slick-current.slick-active.slick-center,
-.slider_progress_items li.slick-slide.slick-current.slick-active img,
-.slider_progress_items li.slick-slide.slick-current.slick-active,
-.meta_address li:before,
-.footer_tags li a:hover,
-.ch_product_icon li a.active,
-.ch_product_icon li a:hover,
-.header_version_5 .social-icons_list li:hover,
-.church_container_version2 .audioplayer .controls .play:hover,
-.church_container_version2 .audioplayer .player .progressbar div,
-.church_container_version2 .audioplayer .controls .pause:before, 
-.church_container_version2 .audioplayer .controls .play:before{
-	border-color: #c62641 !important;
+/*Background Overlay Colors*/
+.theme-overlay {
+    background: rgba(0,21,47,0.86);
 }
-
-
-.share_social a:hover,
-.footer_twitter span,
-.navigation ul li ul li:hover,
-.sermon_caption .social-icons-simple li:hover a,
-.sermon_absolute button,
-.chu_prayer_columns:hover .flows_btn .default_btn,
-.church_causes_columns .meta_address,
-.church_location.active span,
-.church_location:hover span,
-.pagination span:hover,
-.pagination a:hover,
-.arrows_redios .slick-arrow:hover,
-.blog_slider_posts .slick-dots li.slick-active button,
-.box_span span,
-.widget_church_flicker .footer_tags li:hover a,
-.church_menu_row .velues_adds .playlist,
-.church_listing_player .church_play_track.accordion-open a,
-.our_team_services .social-icons li:hover a,
-.theme-bg_btn,
-.our_services_col:hover,
-.nav-dots span.nav-dot-current,
-.nav-arrows a:hover,
-.border-white:hover,
-.navigation ul li:hover a,
-.cart_items_show ul li a sup,
-.social-icons_list li:hover a,
-.player .progressbar .bar-played,
-.hover-effect-03 figure:before,
-/*===============================================*/
-.form_submit .default_small_btn.btn_2,
-.ch_social_share ul li a:hover,
-.church_blog_next li a:hover,
-.banner_dots,
-.banner_dots:before,
-.banner_dots:after,
-.church_playing-options.icon ul li a:hover,
-.church_blog_fig:hover .default_small_btn.btn_2,
-.default_small_btn.btn_2:hover,
-/*===============================================*/
-.amount_focus input[type="radio"]:checked ~ label,
-.weekly-groups_services .weekly_column,
-.full-width-services,
-.style_version_5 .volume-adjust > div > div,
-.donate_progress-blog:hover .ch_position-up .skillbar1-bar,
-.church_blog_columns:hover .donate_info > span,
-.ch_add_events,
-.default_arrows .slick-arrow:hover,
-.header_version_2 .navigation ul li ul.children,
-.header_version_2 .navigation ul li ul.sub-menu,
-.church_menu_row .velues_adds .playlist,
-.church_container_version2 li:hover #playlist:before,
-.velues_adds .controls li:hover,
-.velues_adds .controls li *.pause.visible:before,
-.church_prayer_block,
-.slick-dots li.slick-active button,
-.testimonial_item,
-.services_weekly li,
-.theme2-bg_btn,
-.skillbar1-bar,
-.btn_2:hover,
-ul.slick-dots,
-ul.slick-dots:before,
-ul.slick-dots:after,
-.block_services li:hover span,
-div.dl-menuwrapper ul,
-div.dl-menuwrapper button,
-.church_listing_block .church_date,
-.post_event_first figure:before,
-.header_version_5 .social-icons_list li:hover a,
-.church_navigation_block,
-.church_container_version2 .volume-adjust > div > div,
-.language_changer .selectric-items li:hover,
-.footer_tags li a:hover,
-.ch_product_icon li a.active,
-.ch_product_icon li a:hover,
-.church_play_track a:hover i,
-.ch_product_item:hover .ch_product_span,
-.church_playing-options li a:hover,
-.church_container_version2 .audioplayer .controls .play:hover:before,
-.church_container_version2 .audioplayer .controls .pause:hover:before,
-.church_container_version2 .audioplayer .controls .play:hover,
-.church_container_version2 .player .progressbar .bar-played{
-	background-color:#c62641;
+.theme-overlay2 {
+	background-color: rgb(7 14 32 / 82%);
 }
-
-
-.btn_2:hover,
-.church_container_version2 .volume-adjust > div > div,
-.language_changer .selectric-items li:hover{
-	color: #fff;
+.theme-overlay3 {
+	background: rgba(191,10,48,0.89);
 }
-.theme-bg_btn:hover{
-	background: #333;
-	color:#fff;
+/*Icon Colors*/
+.icon-theme, .day-count-icon > span {
+	color: #bf0a30;
 }
-.footer_blog_post figure img,
-.item_images a i,
-.item_images a:before,
-.church_blog_detail_text figure img,
-.church_causes_detail figure img,
-.church_causes_listing figure img,
-.church_causes_columns figure img,
-.share_social a,
-.church_causes_listing.church_music_book figure img,
-.right_side-content figure img,
-.church_ministry_cols figure img,
-.church_ministry_cols figure,
-.left_side-content figure img,
-.church_pastors_column figure img,
-.church_flicker_gallery li a img,
-.church_play_track a i,
-.church_blog_columns figure img,
-.church_listing_block figure img, 
-.church_container_version2 .audioplayer .controls .play,
-.widget_church_flicker .footer_tags li a,
-.form_submit .default_small_btn.btn_2,
-.churech_author.comment,
-.church_blog_next li a,
-.church_service_post_fig figure img,
-.post_fig_text .countdown,
-.copyright-content.center p a,
-.church_blog_post_fig figure img,
-.church_blog_post_fig .overlay:before,
-.post_img_list .overlay:before,
-.post_img_list figure img,
-.church_postor_wrap.overlay figure:before,
-.church_causes_fig  .progress-bar div span:after,
-.church_news_fig figure img,
-.church_news_fig .overlay:before,
-.church_latest_fig .overlay:before,
-.church_latest_fig figure img,
-.church_blog_fig .overlay:before,
-.church_blog_fig figure img,
-.btn_2,
-.church_playing_music figure img,
-.default_small_btn.btn_2{
-
-	-webkit-transition:all 1s ease-in-out;
-		-moz-transition:all 1s ease-in-out;
-			-ms-transition:all 1s ease-in-out;
-				-o-transition:all 1s ease-in-out;
-					transition:all 1s ease-in-out;
-
+.full-view-wrapper .close:before, .full-view-wrapper .close:after,
+.overlay-search .close:before, .overlay-search .close:after,
+.f-box-style-4 .feature-title:before, .events-title:before {
+    background: #bf0a30;	
 }
-.church_flicker_gallery li a:before,
-.church_blog_footer li a,
-.church_navigation_block .cart_items_show li a,
-.church_playing_music figure:before,  
-.church_playing-options li a,
-.church_listing_block figure:before,
-.church_blog_columns figure:before,
-.slider_progress_items li:before,
-.church_container_version2 .audioplayer .controls .play:before,
-.church_container_version2 .audioplayer .controls .pause:before,
-.item_images a i,
-.no-touch .dl-menuwrapper li a,
-.soft_column figure img,
-.full-banner .sb-current .slider-caption{
-	-webkit-transition:all 0.4s ease-in-out 0s;
-		-moz-transition:all 0.4s ease-in-out 0s;
-			-ms-transition:all 0.4s ease-in-out 0s;
-				-o-transition:all 0.4s ease-in-out 0s;
-					transition:all 0.4s ease-in-out 0s;
+/*Woo Commerce Colors*/
+.onsale, .cart-count {
+    background: #bf0a30;	
 }
-
-
-.church_blog_detail_text figure:before,
-.church_causes_detail figure:before,
-.church_causes_listing figure:before,
-.church_causes_columns figure:before,
-.church_music_book .meta_address li a,
-.church_causes_listing.church_music_book figure:before,
-.right_side-content figure:before,
-.left_side-content figure:before,
-.church_ministry_cols figure:before,
-.church_playing-options.icon ul li a,
-.ch_product_star li a,
-.ch_product_item .ch_product_span,
-.ch_product_icon li a,
-.ch_product_icon,
-.church_pastors_column figure:before,
-.services_post span,
-.block_services li,
-.block_services li:before,
-.footer_tags li a,
-.church_version-5 .church_navigation nav > ul > li:before,
-.navigation ul li ul li,
-.navigation ul li ul,
-.chu_prayer_columns .flows_btn .default_btn,
-.chu_prayer_columns .prayer_icons_styles div > a,
-.social-icons li a,
-.our_team_column .our_team_services,
-.our_services_col span:after,
-.our_services_col h5 a,
-.our_services_col span,
-.our_services_col,
-.nav-arrows a:before,
-.nav-arrows a,
-.border-white,
-.navigation ul li a,
-.social-icons_list li a,
-.header_version_2 .church_navigation li a,
-.header_version_2 .church_navigation li,
-.header_version_2 .church_navigation li a:before,
-.velues_adds .controls li,
-.velues_adds .controls li *.pause.visible:before,
-.black-bg_btn,
-.theme2-bg_btn,
-.church_caption_blog h4 a,
-.post-content h6 a,
-.church_blog_columns .donate_info > span,
-.donate_progress-blog .ch_position-up .skillbar1-bar,
-.church_causes_post .church_causes_content a,
-.soft_column,
-.default_arrows .slick-arrow:before,
-.default_arrows .slick-arrow,
-.slider-caption:after,
-.open_services span,
-.church_social_icons li,
-.church_social_icons li a,
-.open_services .open_services_content h4,
-.slider-caption:before,
-.widget_categories ul li a:before,
-.widget_categories ul li a,
-textarea,
-input,
-.pagination span,
-.pagination a,
-.widget_event_slider li a img,
-.widget_event_slider li a,
-.widget_event_slider li a:before,
-.churech_author.comment > a,
-.ch_social_share ul li a,
-.blockquote_text a,	
-.breadcrumb li a,
-.post_fig_text > h6 a,
-.post_comment a,
-.church_location.active span,
-.church_location span,
-.church_causes_fig > h4 a,
-.church_causes_fig .progress-bar.position .progress_text,
-.church_meta_date.meta_2 li a,
-.sermon_caption .social-icons-simple li a,
-.church_playing-options.icon ul li a i,
-.arrows_redios .slick-arrow:before,
-.church_causes_columns .church_absolute_middel,
-.arrows_redios .slick-arrow,
-.navigation ul li ul.sub-menu > li a,
-.default_small_btn.btn_2{
-	-webkit-transition:all 0.3s ease-in-out;
-		-moz-transition:all 0.3s ease-in-out;
-			-ms-transition:all 0.3s ease-in-out;
-				-o-transition:all 0.3s ease-in-out;
-					transition:all 0.3s ease-in-out;
+.product-details a:hover {
+	color: #bf0a30;
 }
-
-.soft_column a,
-.soft_column p,
-.soft_column h4,
-.default_btn,
-.hover-effect-03 .simple_effect a,
-.hover-effect-03 .simple_effect,
-.hover-effect-03 figure:before,
-.simple_effect,
-.header_version_2 .navigation ul li ul.children li:before,
-.header_version_2 .navigation ul li ul.sub-menu li:before,
-.header_version_2 .navigation ul li ul.children,
-.header_version_2 .navigation ul li ul.sub-menu,
-.hover_effect_02{
-	-webkit-transition:all 400ms ease-in-out;
-		-moz-transition:all 400ms ease-in-out;
-			-ms-transition:all 400ms ease-in-out;
-				-o-transition:all 400ms ease-in-out;
-					transition:all 400ms ease-in-out;
+/*Social Icon Colors*/
+.social-icons.icons-circle a > span,
+.post-meta .social-icons.small.icons-circle a > span:hover,
+.social-icons.icons-squared a > span {
+    background: #bf0a30;
 }
-
-
-.slider_thumbnail_items .item,
-.slider_thumbnail_items .item img{
-	-webkit-transition:all 600ms ease-in-out;
-		-moz-transition:all 600ms ease-in-out;
-			-ms-transition:all 600ms ease-in-out;
-				-o-transition:all 600ms ease-in-out;
-					transition:all 600ms ease-in-out;
+.header-inner .bg-dark .social-icons span:hover {
+	color: #bf0a30;
 }
+/*Button Colors*/
+.btn, button, .btn-default, .h-btn > .btn:hover,
+.header-1 .h-btn.btn-2 > .btn,
+.header-3 .sticky-head.header-sticky {
+    background: #bf0a30;
+}
+.btn-outline {
+    border-color: #bf0a30 !important;
+}
+.header-1 .navbar .navbar-main.menu-white > li > a:hover,
+.header-1 .header-sticky .navbar .navbar-main.menu-white > li > a:hover {
+	color: #bf0a30 !important;
+}
+.h-btn > .btn, .has-feedback.has-success .form-control-feedback {
+	color: #bf0a30 !important;
+}
+.header-navbar-text-1 .h-donate-btn,
+.navbar .header-phone {
+    background: #bf0a30;
+}
+/*Border Colors*/
+.feature-box-wrap.f-box-style-3, .contact-form-3 .form-control:focus,
+.contact-form-3 .btn, . team-style-1 .form-control:focus,
+.contact-form-1 .btn, .contact-form-5 .form-control:focus,
+.contact-form-5 .btn, .h-btn > .btn:hover, 
+.team-style-3 .team-details {
+    border-color: #bf0a30;
+}
+.pricing-table-wrapper .btn:hover {
+	border: 2px solid #bf0a30;	
+ }
+.pricing-table-wrapper .btn:hover {
+	border: 1px solid #bf0a30;	
+ }
+.blog-single .blog-info-wrap blockquote.blockquote-2 {
+     border: 5px solid #bf0a30;
+}
+.dropdown:hover > .dropdown-menu {
+    border-top-color: #bf0a30;
+}
+.f-box-style-3 .feature-icon span,
+.single-portfolio .portfolio-meta {
+    background: #bf0a30;
+}
+.form-control:focus, .form-control:active {
+    border-bottom: solid 1px #bf0a30;
+}
+.blog-classic .blog-inner>.blog-thumb:before {
+    border-top-color: #bf0a30;
+    border-bottom-color: #bf0a30;
+}
+.blog-classic .blog-inner>.blog-thumb:after {
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-right-width: 2px;
+    border-right-style: solid;
+    border-right-color: #bf0a30;
+    border-left-color: #bf0a30;
+}
+.b-dot {
+    border: dotted #bf0a30;
+}
+.feature-box-wrap.f-box-style-2:after {
+    border-bottom-color: #bf0a30;
+}
+.border-bottom, .border-top1 {
+    background: #bf0a30;
+}
+.br-dotted {
+	border: 10px dotted #bf0a30;
+}
+.br-solid {
+	border: 8px solid #bf0a30;
+}
+/*Owl Slider Colors*/
+.typo-dark .owl-dot.active span,
+.typo-white .owl-dot.active span,
+.owl-dot.active span,
+.owl-carousel .owl-nav button.owl-next:hover, 
+.owl-carousel .owl-nav button.owl-prev:hover {
+    color: #bf0a30;
+}
+.typo-dark .owl-dot.active span,
+.typo-white .owl-dot.active span,
+.owl-dot.active span,
+.owl-carousel .owl-nav button.owl-next, 
+.owl-carousel .owl-nav button.owl-prev {
+    color: #bf0a30;
+}
+.typo-white .owl-carousel .owl-nav button.owl-next span, 
+.typo-white .owl-carousel .owl-nav button.owl-prev span {
+    color: #bf0a30;
+}
+.owl-dot.active span,
+.owl-prev span:after,
+.owl-next span:after {
+    background: #bf0a30;
+}
+/* Portfolio Colors*/
+.portfolio-icons a {
+    background: #bf0a30;
+}
+.portfolio-filter > ul > li.active > a, span.portfolio-meta-icon,
+.custom-post-nav a:hover i {
+    color: #bf0a30;
+}
+.portfolio-filter.portfolio-filter-2 > ul > li > a:before,
+.portfolio-default .portfolio-item .portfolio-icons a,
+.portfolio-classic .portfolio-overlay-wrap .portfolio-icons a {
+    background: #bf0a30;
+}
+/*Team Colors*/
+.team-style-7 .team-details > .bottom-dot,
+.team-style-1 .team-thumb:after {
+    background: #bf0a30;
+}
+.team-style-1 .team-details::before {
+    border-bottom-color: #bf0a30 !important;
+}
+.team-inner .team-overlay {
+	background: rgba(0,21,47,0.8);
+}
+.team-style-1 .team-inner .team-overlay-details .social-icons a:hover span {
+    color: #bf0a30;
+}
+/*Testimonials Colors*/
+.quote:before, .testimonials-style-1 .testimonials-thumb:before {
+    background: #bf0a30;
+}
+.testimonials-style-1 .testimonials-desc .blockquote-1:before {
+    color: #bf0a30;
+}
+.testimonials-style-1 .testimonials-desc::before {
+    color: #bf0a30;
+}
+/*Blog Colors*/
+.blog-style-1 .blog-inner .blog-link a.link, 
+.blog-style-2 .blog-inner .blog-link a.link,
+.blog-style-3 .blog-inner .blog-link a.link,
+.blog-style-3 .blog-details .post-date i,
+.blog-single .post-meta ul li a:hover,
+.blog-single .post-meta .social-icons a > span::before,
+.post-navigation-wrapper a.prev h4:hover, .post-navigation-wrapper a.next h4:hover {
+	color: #bf0a30;
+}
+.blog-style-1 .blog-inner .top-meta .post-date a,
+.blog-style-2 .blog-details .post-date a,
+.post-navigation-wrapper .prev-nav-link .post-nav-text, 
+.post-navigation-wrapper .next-nav-link .post-nav-text {
+	background: #bf0a30;
+}
+.post-navigation-wrapper {
+	border: solid 2px #bf0a30;
+}
+/*Featurebox Colors*/
+.feature-title-4 a, span.feature-count,
+.f-box.c-page .feature-content a:hover, .feature-box-btn .btn-link,
+.f-box-style-2:hover .f-box-inner .btn-link:hover, .f-list-4 a:hover,
+.contact-info.info-2 .f-list-4 .feature-list-icon span {
+	color: #bf0a30;
+}
+.f-box-style-1 .feature-box-details .feature-icon span,
+.f-list-2.feature-list-icon span,
+.f-list-4 .feature-list-icon span,
+.f-list-5 .feature-list-icon span,
+.contact-info.info-2 .f-list-4:hover .feature-list-icon span {
+	background: #bf0a30;
+}
+.f-box-style-3::after {
+    background-color: #bf0a30;
+}
+.feature-box-wrap.f-box-style-4:hover,
+.feature-box-wrap.f-box-style-4:hover .feature-icon::before {
+    background-color: #bf0a30;
+}
+.feature-box-wrap.f-box-style-4:hover .feature-icon::before {
+    border: solid 6px #bf0a30;
+}
+.flip-box-inner.imghvr-flip-3d-horz .flip-box-front,
+.flip-box-inner.imghvr-flip-3d-horz .flip-box-back .flip-box-title:after,
+.feature-box-wrap.f-box-style-2:hover .feature-icon span {
+	background-color: #bf0a30;
+}
+.flip-box-inner.imghvr-flip-3d-horz .flip-box-back .flip-box-title,
+.feature-box-wrap.f-box-style-2 .feature-icon span,
+.feature-box-wrap.f-box-style-2 .feature-btn a {
+	color: #bf0a30;
+}
+.ft-border {
+    border: 15px solid #bf0a30;
+}
+.bg-ct1 {
+    background-color: #00162F;
+}
+.bg-ct2 {
+    background-color: #00162FF7;
+}
+/*Timeline Colors*/
+.timeline-left .timeline > li.timeline-inverted > .timeline-panel:after {
+    border-left-color: #bf0a30;
+    border-right-color: #bf0a30;
+}
+.timeline-left .timeline > li > .timeline-sep-title > .timeline-top-title {
+    color: #bf0a30;
+}
+/*Ministries Shortcode*/
+.ministries-category-list a:hover,
+.ministries-category-list .active a,
+.ministries-box-style-2 .ministries-icon-img-wrap img {
+    background: #bf0a30;
+}
+.ministries-box-style-2 .ministries-link .link {
+    color: #bf0a30;
+}
+.ministries-box-style-2 {
+	border-bottom-color: #bf0a30 !important;
+}
+.ministries-box-style-2 .ministries-inner .ministries-thumb::before {
+	background-color: rgba(191,10,48,0.88);
+}
+.ministries-box-style-3 .ministries-title:before {
+	background: #bf0a30;
+}
+.ministries-box-style-3::before {
+    border-top: 4px solid #bf0a30;
+    border-bottom: 4px solid #bf0a30;
+}
+.ministries-box-style-3::after {
+	border-left: 4px solid #bf0a30;
+    border-right: 4px solid #bf0a30;
+}
+.ministries-box-style-4 .invisible-number {
+	background: #bf0a30;
+}
+/*Events Shortcode*/
+.events-style-1 .events-item .event-date,
+.events-style-1 .events-item .read-more a,
+.events-style-2 .events-details .event-date,
+.events-style-2 .events-details .read-more a,
+.events-style-3 .events-details .read-more a,
+.events-style-4 .events-details .read-more a {
+    color: #bf0a30;
+}
+.events-style-1 .events-item .event-date::before,
+.events-style-1 .events-item .event-date::after,
+.events-style-2 .events-details .event-date::before,
+.events-style-2 .events-details .event-date::after,
+.events-style-3 .events-inner .event-date,
+.events-style-4 .events-inner .event-date {
+	background: #bf0a30;
+}
+.events-style-4 .events-inner .events-details .event-title {
+	border-left: dotted 4px #bf0a30;
+}
+.event-info h4, .event-venue h4, .event-contact-title h4 {
+    background-color: #bf0a30;
+}
+/*Blog Shortcode*/
+.tag-cloud a.tag-cloud-link:hover,
+.blog-grid .post-meta li a.author-name,
+.blog-list .blog-inner .post-date a {
+    background: #bf0a30;
+}
+.blog-list .blog-link a {
+    border-bottom: solid 2px #bf0a30;
+}
+.category-list > li {
+    border-bottom: 1px dashed #eaeaea;
+}
+.category-list > li > a:before,
+.blog-list .blog-link .link {
+    color: #bf0a30;
+}
+/*Accordion Shortcode*/
+.accordion-style-2 .card.accordion-panel .card-inner {
+	border-top: 3px solid #bf0a30;
+}
+/*Counter Colors*/
+span.v-border, .counter-value.h-border:before {
+    background: #bf0a30;
+}
+/*Day Counter Colors*/
+.day-counter-2 .counter-elements::after,
+.day-counter-3 .counter-elements::after {
+    background: rgba(191,10,48,0.1);
+}
+/*Tab Colors*/
 
-
-
+.tab-body.tab-style-3 .nav-tabs .nav-link.active::after {
+    border-top-color: #bf0a30;
+}
+.tab-body.tab-style-5 .nav-tabs .nav-link.active {
+    color: #bf0a30;
+}
+/*Progress Colors*/
+.progress-bar,
+.campaigns-link a {
+    background: #bf0a30;
+}
+.campaign-time-left .days-left {
+	color: #bf0a30;
+}
+/*Footer Colors*/
+.footer-middle-wrap .widget-title .title::before,
+.footer-middle-wrap .widget-title .title::after,
+.v-sticky-main-wrapper .widget-title .title::after,
+.v-sticky-main-wrapper .widget-title .title::before {
+	background: #bf0a30;
+}
+.menu-quick-links ul li a:before,
+.recent-posts .footer-list-posts > li .post-date::before,
+.footer-text a {
+	color: #bf0a30;
+}
+/*Widget Colors*/
+.contact-widget-info>p>span:before,
+.side-noimg span {
+	color: #bf0a30;
+}
+.sidebar .widget-title .title:before,
+.sidebar .widget-title .title:after,
+.subscribe-form .input-group-btn button {
+    background: #bf0a30;
+}
+/*Selectors Colors*/
+::selection {
+	background: #bf0a30;
+    color: #fff;
+    text-shadow: none;                                                                  
+}
+::-moz-selection {
+    background: #bf0a30;
+    color: #fff;
+    text-shadow: none;
+}
+::-webkit-selection {
+    background: #bf0a30;
+    color: #fff;
+    text-shadow: none;
+}
+.video-icon a.popup-youtube,
+.video-icon a.popup-youtube::before,
+.video-icon a.popup-youtube::after {
+	background: #bf0a30;
+}
+.sermon-view-wrapper,
+.sermon-play-list li a, .sermon-tool-list li a,
+.nav.pagination > li.nav-item a,
+.sermon-grid-2 .sermon-inner .sermon-link > a {
+	background: #bf0a30;
+}
+.sermon-info a, .sermon-grid-2 .sermon-inner .sermon-link > a.btn-link,
+.single-sermon .sermon-play-list li a:hover i, 
+.single-sermon .sermon-tool-list li a:hover i {
+    color: #bf0a30;
+}
+.donate-form .donation-fields .donation_amount:checked {
+    background: #bf0a30;
+}

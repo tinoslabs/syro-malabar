@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %} 
+            <!-- header -->
+            <!-- page-header -->
+            <div class="page-title-wrap typo-white">
+                <div class="page-title-wrap-inner section-bg-img" data-bg="{% static 'images/1.jpg' %}">
+					<span class="theme-overlay"></span>
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-md-12">
+                                <div class="page-title-inner">
+									<div id="breadcrumb" class="breadcrumb margin-bottom-10">
+                                        <a href="index.html" class="theme-color">Home</a>
+                                        <span class="current">Blog Details</span>
+                                    </div>
+                                    <h1 class="page-title mb-0">{{ blog.main_heading }}</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- page-header -->
+            <!-- Page Content -->
+            <div class="content-wrapper pad-none">
+                <div class="content-inner">					
+					<!-- Sermon Section -->
+                    <section id="ministries-section" class="ministries-section pad-bottom-70">
+                        <div class="container">
+							 <!-- Sermon Main Wrap -->
+							<div class="ministries-main-wrap ministries-grid">
+								<!-- Row -->
+								<div class="row">
+									<!-- Col -->
+									<div class="col-lg-8">
+										<!-- Row -->
+										
+										<!-- Row -->
+										<!-- Row 2 -->
+										<div class="row">
+											<!-- Col -->
+											<div class="col-md-12">		
+												<p class="margin-bottom-15">{{ blog.blog_description|safe }}</p>											
+											</div>
+											 <!-- Col -->                                    
+										</div>
+										<!-- Row 2 -->
+										<!-- Row 3 -->
+										
+										<!-- Row 3 -->
+									</div>
+									<!-- Col -->
+                                    <div class="col-lg-4 ps-5 px-sm-15">
+                                        <!-- Sidebar -->
+                                        <div class="sidebar right-sidebar">
+                                            
+                                             <div class="widget recent-posts mb-0">
+                                                <div class="widget-title">
+                                                   
+                                                    <h3 class="title">Latest Posts</h3>
+                                                </div>
+                                                    <ul class="list-post-content">
+                                                    <li>
+                                                        
+                                                        <div class="media list-post">
+                                                            <span class="latest-thumb me-3">
+                                                                <img width="70" height="70" class="rounded" src="{% static 'images/blog/thumb/blog_thumb1-80x80.jpg' %}" alt="">
+                                                            </span>                                                           
+                                                            <div class="media-body">
+                                                                 <a href="blog-single.html">Giving Back – Uganda Training Centers</a>
+                                                                <div class="meta-items mt-2">
+                                                                    <span class="post-date"><i class="ti-calendar me-2 theme-color"></i>Oct 21, 2019</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                      
+                                                    </li>
+                                                    <li>
+                                                       
+                                                        <div class="media list-post">
+                                                            <span class="latest-thumb me-3">
+                                                                <img width="70" height="70" class="rounded" src="{% static 'images/blog/thumb/blog_thumb2-80x80.jpg' %}" alt="">
+                                                            </span>
+                                                            <div class="media-body">
+                                                                <a href="blog-single.html">Spirit Of The Lord Is, From The New Life</a>
+                                                                <div class="meta-items mt-2">
+                                                                    <span class="post-date"><i class="ti-calendar me-2 theme-color"></i>Oct 21, 2019</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                       
+                                                    </li>
+                                                    <li>
+                                                        
+                                                        <div class="media list-post">
+                                                            <span class="latest-thumb me-3">
+                                                                <img width="70" height="70" class="rounded" src="{% static 'images/blog/thumb/blog_thumb4-80x80.jpg' %}" alt="">
+                                                            </span>
+                                                            <div class="media-body">
+                                                                <a href="blog-single.html">Help End The Water Crisis For Families</a>
+                                                                <div class="meta-items mt-2">
+                                                                    <span class="post-date"><i class="ti-calendar me-2 theme-color"></i>Oct 20, 2019</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </li>													
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>
+                                        <!-- Sidebar -->
+                                    </div>
+                                    <!-- Col -->
+								</div>
+								<!-- Row -->
+							</div>
+							<!-- Sermon Main Wrap -->
+						</div>
+						<!-- Container -->
+                    </section>
+                    <!-- Sermon Section End -->
+                </div>
+            </div>
+        </div>
+    <!-- .page-wrapper-inner -->
+    </div>
+    <!--page-wrapper-->
+
+    {% endblock %}

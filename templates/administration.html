@@ -1,67 +1,95 @@
 {% extends "base.html" %}
 {% load static %}
-{% block content %}
-		<!--sab banner start-->
-		<div class="sab_banner_wrap overlay">
-			<div class="sub_slider">
-                <div class="banner_slide">
-                    <img src="{% static 'images/1.jpg' %}" alt="">
-                </div>
-                {% comment %} <div class="banner_slide">
-                    <img src="{% static 'images/sab-banner-bg.png' %}" alt="">
-                </div>
-                <div class="banner_slide">
-                    <img src="{% static 'images/sab-banner-bg.png' %}" alt="">
-                </div> {% endcomment %}
-            </div>
-            <div class="container">
-				<div class="sab_banner_text">
-					<h3>Administration</h3>
-					<ul class="breadcrumb">
-					  <li class="active">Administration</li>
-					</ul>
-					<div class="banner_dots">
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--sab banner end-->
-		
-		
-		<div class="our-team">
-            <div class="container">
-                <div class="church_heading align_center">
-                    <h3>Our Team</h3>
-                    <span><sup class="icon-cross"></sup></span>
-                </div>
-                <div class="row">
-                    {% for member in administration_team %}
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="our_team_column">
-                            <figure>
-                                <img src="{{ member.image.url }}" alt="{{ member.name }}">
-                                <div class="our_team_services">
-                                    <ul class="social-icons">
-                                        <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        <li><a href=""><i class="fa fa-camera" aria-hidden="true"></i></a></li>
-                                    </ul>
+{% block content %}    
+            <!-- header -->
+            <!-- page-header -->
+            <div class="page-title-wrap typo-white">
+                <div class="page-title-wrap-inner section-bg-img" data-bg="{% static 'images/1.jpg' %}">
+					<span class="theme-overlay"></span>
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-md-12">
+                                <div class="page-title-inner">
+									<div id="breadcrumb" class="breadcrumb margin-bottom-10">
+                                        <a href="index.html" class="theme-color">Home</a>
+                                        <span class="current">Administration</span>
+                                    </div>
+                                    <h1 class="page-title mb-0">Administration</h1>                                    
                                 </div>
-                            </figure>
-                            <div class="our_team_caption">
-                                <a href="#">{{ member.name }}</a>
-                                <span>{{ member.designation }}</span>
                             </div>
                         </div>
                     </div>
-                    {% endfor %}
+                </div>
+            </div>
+            <!-- page-header -->
+            <!-- Page Content -->
+            <div class="content-wrapper pad-none">
+                <div class="content-inner">
+                    <!-- About Section -->
+                    <section id="team-section" class="team-section pad-top-120">
+						<div class="container">
+							<!-- Row -->
+							<div class="row">
+								<div class="offset-md-2 col-md-8">
+									<div class="title-wrap text-center">
+										<div class="section-title">
+											<span class="sub-title theme-color text-uppercase">Our Team</span>
+											<h2 class="section-title margin-top-5">Church Pastors</h2>
+											<span class="border-bottom center"></span>
+										</div>
+									</div>
+								</div>
+								<!-- Team Main Slider -->
+								<div class="owl-carousel team-main-wrapper" data-loop="1" data-nav="0" data-dots="1" data-autoplay="1" data-autoplaypause="1" data-autoplaytime="5000" data-smartspeed="1000" data-margin="30" data-items="4" data-items-tab="2" data-items-mob="1">
+									<!-- Dynamic Items -->
+									{% for member in administration_team %}
+									<div class="item">
+										<div class="team-style-1">
+											<!-- Team Inner -->
+											<div class="team-inner box-shadow margin-bottom-20">
+												<div class="team-thumb mb-0 relative">
+													<img src="{{ member.image.url }}" class="img-fluid thumb w-100" width="480" height="485" alt="{{ member.name }}" />
+												</div>
+												<div class="team-details bg-white text-center pad-lr-30 pad-top-30 pad-bottom-20">
+													<div class="team-name">
+														<h3 class="mb-0"><a href="#" class="client-name">{{ member.name }}</a></h3>
+													</div>
+													<div class="team-designation mb-3"><p class="mb-0">{{ member.designation }}</p></div>
+													<div class="team-social social-icons">
+														<a href="#"><span class="ti-facebook"></span></a>
+														<a href="#"><span class="ti-twitter"></span></a>
+														<a href="#"><span class="ti-instagram"></span></a>
+														<a href="#"><span class="ti-linkedin"></span></a>
+													</div>
+												</div>
+											</div>
+											<!-- Team Inner Ends -->
+										</div>
+									</div>
+									<!-- Item Ends -->
+									{% endfor %}
+								</div>
+								<!-- Team Owl Slider -->
+							</div>
+							<!-- Row -->
+						</div>
+						<!-- Container -->
+					</section>
+					
+                    <!-- About Section End -->
+					<!-- Get a Quote Section -->
+                    
+                    <!-- Get a Quote Section End -->
+                    <!-- Team Section -->
+					
+					<!-- Team Section End -->				
                 </div>
             </div>
         </div>
-        {% endblock %}
-		
-		
+        <!-- .page-wrapper-inner -->
+    </div>
+    <!--page-wrapper-->    
+
+    <!-- Footer -->
+    <!-- Footer -->
+    {% endblock %}

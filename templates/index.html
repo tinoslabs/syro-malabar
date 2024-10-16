@@ -1,985 +1,993 @@
-<!DOCTYPE html>
+<!doctype html>
 {% load static %}
-<html lang="en">
-	
-  <head>
+<html class="no-js" lang="zxx">
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Syro-Malabar Catholic Church</title>
-
+	<link href="{% static 'images/logo.jpg' %}" rel="icon">
+    <!--Title-->
+    <title>Syro-Malabar Louisville</title>
+    <!-- CSS -->
     <!-- Bootstrap -->
-    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
-    <!-- Font-awesome -->
-    <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
-    <!-- Slick Slider -->
-    <link href="{% static 'css/slick.css' %}" rel="stylesheet">
-    <link href="{% static 'css/fancy_slider.css' %}" rel="stylesheet">
-    <!-- audio.css -->
-    <link href="{% static 'css/audio.css' %}" rel="stylesheet">
-    <!-- Typography -->
-    <link href="{% static 'css/typography.css' %}" rel="stylesheet">
-    <!-- widget.css -->
-    <link href="{% static 'css/widget.css' %}" rel="stylesheet">
-    <!-- selectric.css -->
-    <link href="{% static 'css/selectric.css' %}" rel="stylesheet">
-    <!-- svg-icons.css -->
-    <link href="{% static 'css/svg-icons.css' %}" rel="stylesheet">
-    <!-- component-responsive.css -->
-    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
-    <!-- shortcodes.css -->
-    <link href="{% static 'css/shortcodes.css' %}" rel="stylesheet">
-    <!-- colors.css -->
-    <link href="{% static 'css/colors.css' %}" rel="stylesheet">
-    <!-- style.css -->
-    <link href="{% static 'css/style.css' %}" rel="stylesheet">
-
-  </head>
-  <body class="bg_none">
-
-    <!--church wrapper-->
-    <div class="wrapper">
-        <!--church header-->
-        <header class="header_version_2">
-            <div class="container">
-                <!--church logo-->
-                <div class="church_logo">
-                    <h1><a href="{% url 'index' %}"><img src="{% static 'images/logo.jpg' %}" alt="church logo"></a></h1>
-                </div>
-                <!--church logo ends-->
-
-                <div id="kode-responsive-navigation" class="dl-menuwrapper">
-                        <button class="dl-trigger">Menu</button>
-                        <ul class="dl-menu">
-                            <li class="active"><a class="active" href="{% url 'index' %}">Home</a>
-                                
-                            </li>
-                            <li class="menu-item"><a href="#about-section">About Us</a>
-                               
-                            </li>
-                            <li class="menu-item"><a href="{% url 'masses' %}">Masses</a>
-                                
-                            </li>
-                            <li class="menu-item"><a href="{% url 'administration' %}">Administration</a>
-                                
-                            </li>
-                            <li class="menu-item"><a href="{% url 'gallery' %}">Gallery</a>
-                                
-                            </li>
-                            <li><a href="{% url 'blog' %}">Blog</a></li>
-                            <li><a href="{% url 'contact' %}">Contact Us</a>    
-                            </li>
-                           
-                        </ul>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <!-- Simple Line Icons -->
+    <link rel="stylesheet" href="{% static 'css/simple-line-icons.min.css' %}">
+    <!-- Themify Icons -->
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+    <!-- Owl Slider -->
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+	 <!-- Revolution Slider -->
+	 <link rel="stylesheet" type="text/css" href="rs-plugin/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+	 <!-- REVOLUTION STYLE SHEETS -->
+	<link rel="stylesheet" type="text/css" href="{% static 'rs-plugin/css/settings.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'rs-plugin/css/main-slider/rs6.css' %}">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="{% static 'css/color-schemes/red.css' %}"> 
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" class="main-style">
+    <style>	#rev_slider_6_1_wrapper .tp-loader.spinner1{ background-color: #FFFFFF !important; } </style>
+	<style>.rs-layer.Concept-Content a,.rs-layer.Concept-Content a:visited{color:#fff !important; border-bottom:1px solid #fff !important; font-weight:700 !important}.rs-layer.Concept-Content a:hover{border-bottom:1px solid transparent !important}.rs-layer.Concept-Content-Dark a,.rs-layer.Concept-Content-Dark a:visited{color:#000 !important; border-bottom:1px solid #000 !important; font-weight:700 !important}.rs-layer.Concept-Content-Dark a:hover{border-bottom:1px solid transparent !important}@media only screen and (max-width:575px){rs-layer.res-slide-btn{padding:7px 16px !important;  font-size:13px !important}}#rev_slider_1_1_wrapper .zeus.tparrows{cursor:pointer; min-width:60px; min-height:60px; position:absolute; display:block; z-index:1000; border-radius:50%;  overflow:hidden; background:rgba(0,0,0,0.38)}#rev_slider_1_1_wrapper .zeus.tparrows:before{font-family:'revicons'; font-size:17px; color:#ffffff; display:block; line-height:60px; text-align:center;  z-index:2; position:relative}#rev_slider_1_1_wrapper .zeus.tparrows.tp-leftarrow:before{content:'\e824'}#rev_slider_1_1_wrapper .zeus.tparrows.tp-rightarrow:before{content:'\e825'}#rev_slider_1_1_wrapper .zeus .tp-title-wrap{background:rgba(0,0,0,0.5); width:100%; height:100%; top:0px; left:0px; position:absolute; opacity:0; transform:scale(0); -webkit-transform:scale(0); transition:all 0.3s; -webkit-transition:all 0.3s; -moz-transition:all 0.3s; border-radius:50%}#rev_slider_1_1_wrapper .zeus .tp-arr-imgholder{width:100%; height:100%; position:absolute; top:0px; left:0px; background-position:center center; background-size:cover; border-radius:50%; transform:translatex(-100%); -webkit-transform:translatex(-100%); transition:all 0.3s; -webkit-transition:all 0.3s; -moz-transition:all 0.3s}#rev_slider_1_1_wrapper .zeus.tp-rightarrow .tp-arr-imgholder{transform:translatex(100%); -webkit-transform:translatex(100%)}#rev_slider_1_1_wrapper .zeus.tparrows.rs-touchhover .tp-arr-imgholder{transform:translatex(0); -webkit-transform:translatex(0); opacity:1}#rev_slider_1_1_wrapper .zeus.tparrows.rs-touchhover .tp-title-wrap{transform:scale(1); -webkit-transform:scale(1); opacity:1}#rev_slider_1_1[data-slideactive="rs-1"] .zeus.tparrows{min-width:60px !important;min-height:60px !important;background:rgba(0,0,0,0.38) !important}#rev_slider_1_1[data-slideactive="rs-1"] .zeus.tparrows:before{line-height:60px !important;font-size:17px !important}#rev_slider_1_1[data-slideactive="rs-2"] .zeus.tparrows{min-width:60px !important;min-height:60px !important;background:rgba(0,0,0,0.38) !important}#rev_slider_1_1[data-slideactive="rs-2"] .zeus.tparrows:before{line-height:60px !important;color:#ffffff !important;font-size:17px !important}#rev_slider_1_1[data-slideactive="rs-3"] .zeus.tparrows{min-width:60px !important;min-height:60px !important;background:rgba(0,0,0,0.38) !important}#rev_slider_1_1[data-slideactive="rs-3"] .zeus.tparrows:before{line-height:60px !important;font-size:17px !important}</style>
+</head>
+<!--Body Start-->
+<body data-res-from="1025">
+	<!--Page Loader-->
+	<div class="page-loader"></div>
+    <!--Zmm Wrapper-->
+    <div class="zmm-wrapper">
+        <a href="#" class="zmm-close close"></a>
+        <div class="zmm-inner bg-white typo-dark">
+            <div class="text-center mobile-logo-part margin-bottom-30">
+                 <a href="{% url 'index' %}" class="img-before"><img src="{% static 'images/logo.jpg' %}" class="img-fluid" width="170" height="51" alt="Logo"></a>
+            </div>
+            <div class="zmm-main-nav">
+            </div>            
+			<div class="search-form-wrapper margin-top-30">
+			    <form class="search-form" role="search">
+			        <div class="input-group add-on">
+			            <input class="form-control" placeholder="Search for.." name="srch-term" type="text">
+			            <div class="input-group-btn">
+			                <button class="btn btn-default search-btn" type="submit"><i class="ti-arrow-right"></i></button>
+			            </div>
+			        </div>
+			    </form>
+			</div>
+        </div>
+    </div>
+    <!-- Overlay Search -->
+    <div class="overlay-search text-center hide">
+		<a href="#" class="close close-light overlay-search-close"></a>
+		<div class="search-form-wrapper">
+			<form class="navbar-form search-form sliding-search-form" role="search">
+				<div class="input-group add-on">
+					<input class="form-control" placeholder="Search for.." name="srch-term" type="text">
+					<div class="input-group-btn">
+						<button class="btn btn-default search-btn" type="submit"><i class="ti-arrow-right"></i></button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+    <!-- Main wrapper-->
+    <div class="page-wrapper">
+        <div class="page-wrapper-inner">
+            <header>
+                <!--Mobile Header-->
+                <div class="mobile-header bg-white typo-dark">
+                    <div class="mobile-header-inner">
+                        <div class="sticky-outer">
+                            <div class="sticky-head">
+                                <div class="basic-container clearfix">
+                                    <ul class="nav mobile-header-items pull-left">
+                                        <li class="nav-item"><a href="#" class="zmm-toggle img-before"><i class="ti-menu"></i></a></li>
+                                    </ul>
+                                    {% comment %} <ul class="nav mobile-header-items pull-center">
+                                       <li>
+                                            <a href="{% url 'index' %}" class="img-before"><img src="{% static 'images/logo.jpg' %}" class="img-fluid" width="149" height="45" alt="Logo"></a>
+                                        </li> 
+                                    </ul> {% endcomment %}
+                                    <ul class="nav mobile-header-items pull-right">
+                                        <li class="nav-item"><a href="#" class="img-before overlay-search-switch"><i class="icon-magnifier icons"></i></a></li>
+                                    </ul>
+                                </div>
+                                <!-- .basic-container -->
+                            </div>
+                            <!-- .sticky-head -->
+                        </div>
+                        <!-- .sticky-outer -->
                     </div>
-                    <!--Responsive Menu END-->
-                <!--church menus-->
-                <div class="church_menu_row">
-                    <!--church social navigation menu-->
-                    <div class="church_navigation">
-                        <nav class="navigation">                                                     
-                            <ul>
-                                <li><a href="{% url 'index' %}">Home</a>
+                    <!-- .mobile-header-inner -->
+                </div>
+                <!-- .mobile-header -->
+                <!--Header-->
+                <div class="header-inner header-1 header-absolute">
+                    <!--Topbar-->
+                    <div class="topbar relative">
+                        <div class="basic-container clearfix">
+                            <ul class="nav topbar-items pull-left">
+                                <li class="nav-item">
+								  <ul class="nav header-info">
+									<li>
+										<div class="header-address typo-white"><span class="ti-location-pin"></span> Syro-Malabar Church</div>
+									</li>
+								  </ul>
+								</li>
+                            </ul>
+                            <ul class="nav topbar-items pull-right">
+                                <li class="nav-item">
+                                    <div class="social-icons typo-white">
+                                        <a href="#" class="social-fb"><span class="ti-facebook"></span></a>
+                                        <a href="#" class="social-twitter"><span class="ti-twitter"></span></a>
+                                        <a href="#" class="social-instagram"><span class="ti-instagram"></span></a>
                                     
+                                        <a href="#" class="social-youtube"><span class="ti-youtube"></span></a>
+										
+                                    </div>
                                 </li>
-								<li><a href="#about-section">About Us</a>
-                                    
-                                </li>
-                                <li><a href="{% url 'masses' %}">Masses</a>
-                                    
-                                </li>
-                                <li><a href="{% url 'administration' %}">Administation</a>
-                                    
-                                </li>
+															
+                            </ul>
+                        </div>
+						<!--Search-->
+						<div class="full-view-wrapper hide">
+							<a href="#" class="close full-view-close"></a>
+							<form class="navbar-form search-form" role="search">
+								<div class="input-group">
+									<input class="form-control" placeholder="Search hit enter.." name="srch-term" type="text">
+								</div>
+							</form>
+						</div>
+                    </div>
+                    <!--Topbar-->
+                    <!--Sticky part-->
+                    <div class="sticky-outer">
+                        <div class="sticky-head">
+                            <!--Navbar-->
+                            <nav class="navbar nav-shadow">
+                                <div class="basic-container clearfix">
+                                    <div class="navbar-inner">
+										<!--Overlay Menu Switch-->
+                                        <ul class="nav navbar-items pull-left">
+                                            <li class="list-item">
+                                                <a href="{% url 'index' %}" class="logo-general"><img src="{% static 'images/logo.jpg' %}" class="img-fluid" width="166" height="50" alt="Logo" /></a>
+												<a href="{% url 'index' %}" class="logo-sticky"><img src="{% static 'images/logo.jpg' %}" class="img-fluid" width="166" height="50" alt="Logo" /></a>
+                                            </li>
+                                        </ul>
+										<!-- Menu -->
+                                        <ul class="nav navbar-items pull-right">
+											<!--List Item-->
+                                            <li class="list-item">
+                                                <ul class="nav navbar-main menu-white">
+                                                    <li class="active dropdown cus-img-menu "><a href="{% url 'index' %}">Home</a>
+														
+													</li>
+													<li class="dropdown "><a href="#about-section">About Us</a>
+														
+													</li>
+													<li class="dropdown "><a href="{% url 'administration' %}">Administration</a>
+														
+													</li>
+													<li class="dropdown "><a href="">Members</a>
+													<li class="dropdown mega-dropdown  relative"><a href="{% url 'mass' %}">Mass</a>
+														
+													</li>													
+                                                    <li class="dropdown "><a href="{% url 'blog' %}">Blog</a>
+														
+													</li>
+													<li class="dropdown"><a href="{% url 'gallery' %}">Gallery</a>
+														
+													</li>
+													<!-- <li><a href="contact-us.html">Contact Us</a></li> -->
+                                                </ul>
+                                            </li>
+											<!--List Item End-->
+											<!--List Item-->
+											<li class="list-item">
+												<div class="header-navbar-text-1"><a href="{% url 'contact' %}" class="h-donate-btn">Contact Us</a></div>
+                                            </li>
+											<!--List Item End-->
+                                        </ul>
+										<!-- Menu -->
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <!--sticky-head-->
+                    </div>
+                    <!--sticky-outer-->
+                </div>
+            </header>
+            <!-- header -->
+			<!-- Revolution Slider Section -->
+			<p class="rs-p-wp-fix"></p>
+			<rs-module-wrap id="rev_slider_1_1_wrapper" data-alias="zegen-home-1" data-source="gallery" style="visibility:hidden;background:#000000;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
+				<rs-module id="rev_slider_1_1" style="" data-version="6.5.31">
+					<rs-slides>
+						<rs-slide style="position: absolute;" data-key="rs-1" data-title="Web Show"  data-anim="adpr:false;e:slidingoverlay;ms:2000;" data-in="o:1;x:(100%);" data-out="a:false;">
+							<img src="" alt="Non Profit Wordpress Theme" title="zmain-slider-1.jpg" width="1536" height="864" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="{% static 'images/demo-1.jpg' %}" data-parallax="5" data-no-retina>
+<!--
+							--><h1
+								id="slider-1-slide-1-layer-2" 
+								class="rs-layer Concept-Title"
+								data-type="text"
+								data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)"
+								data-rsp_ch="on"
+								data-xy="x:c;y:m;yo:10px,-26px,-10px,-33px;"
+								data-text="w:normal,nowrap,nowrap,normal;s:54,50,45,30;l:52,55,50,40;ls:3px;fw:700;a:center;"
+								data-dim="w:754px,699px,auto,400px;"
+								data-padding="b:10;"
+								data-frame_0="sX:2;sY:2;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="e:power2.out;st:2110;sp:1270;sR:2110;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:5620;"
+								data-frame_999_reverse="x:true;"
+								style="z-index:10;font-family:'Poppins';text-transform:uppercase;"
+							>God gives us power 
+							</h1><!--
 
-                                <li><a href="{% url 'gallery' %}">Gallery</a>  
-                                </li>
-                                
-                                <li><a href="{% url 'blog' %}">Blog</a>   
-                                </li> 
-                                <li><a href="{% url 'contact' %}">Contact Us</a>    
+							--><rs-layer
+								id="slider-1-slide-1-layer-4" 
+								class="Concept-SubTitle"
+								data-type="text"
+								data-color="#bf0a30||#e9204f||#e9204f||#e9204f"
+								data-rsp_ch="on"
+								data-xy="x:c;y:m;yo:-42px,-83px,-64px,-71px;"
+								data-text="w:normal,nowrap,nowrap,nowrap;s:21,20,20,15;l:21,25,20,20;fw:700;a:center,left,left,left;"
+								data-dim="w:408px,auto,auto,auto;"
+								data-padding="b:10;"
+								data-frame_0="o:1;"
+								data-frame_0_chars="d:5;y:100%;o:0;rZ:-35deg;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:640;sp:1200;sR:640;"
+								data-frame_1_chars="e:power4.inOut;d:10;rZ:0deg;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:4960;"
+								data-frame_999_reverse="x:true;"
+								style="z-index:11;font-family:'Open Sans';text-transform:uppercase;"
+							>we help you get things done 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-14" 
+								data-type="text"
+								data-rsp_ch="on"
+								data-xy="x:c;y:m,t,t,t;yo:78px,286px,271px,233px;"
+								data-text="w:normal;s:18,18,16,15;l:31,30,30,27;a:center;"
+								data-dim="w:806px,805px,689px,388px;h:auto,auto,auto,89px;"
+								data-frame_0="y:100%;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:2680;sp:1360;sR:2680;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:w;sR:4960;"
+								style="z-index:9;font-family:'Open Sans';"
+							>Jesus is holy, loving, and worthy of all our worship and devotion. You will feel heaven in our Zegen Church. Join us and Praise the Lord Jesus.
+ 
+							</rs-layer><!--
+
+							
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-21" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;yo:228px,95px,91px,90px;"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:67px,60px,56px,45px;h:67px,60px,56px,45px;"
+								data-frame_0="x:100%;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:210;sp:1000;sR:210;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:w;sR:7790;"
+								style="z-index:12;"
+							>
+							</rs-layer><!--
+-->						</rs-slide>
+						<rs-slide style="position: absolute;" data-key="rs-2" data-title="Web Show"  data-anim="adpr:false;e:slidingoverlay;ms:2000;" data-in="o:1;x:(100%);" data-out="a:false;">
+							<img src="images/3.jpg" alt="Non Profit Wordpress Theme" title="zmain-slider-3.jpg" width="1536" height="864" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="{% static 'images/head-2.jpg' %}" data-parallax="5" data-no-retina>
+<!--
+							--><h1
+								id="slider-1-slide-2-layer-2" 
+								class="rs-layer Concept-Title"
+								data-type="text"
+								data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)"
+								data-rsp_ch="on"
+								data-xy="x:c;y:m;yo:10px,0,-10px,-32px;"
+								data-text="w:normal,nowrap,nowrap,normal;s:54,50,45,28;l:52,55,50,30;ls:3px;fw:700;a:center;"
+								data-dim="w:922px,845px,736px,478px;h:62px,auto,auto,35px;"
+								data-padding="b:10;"
+								data-frame_0="sX:2;sY:2;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="e:power2.out;st:2110;sp:1270;sR:2110;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:5620;"
+								data-frame_999_reverse="x:true;"
+								style="z-index:10;font-family:'Poppins';text-transform:uppercase;"
+							>We call, price the lord 
+							</h1><!--
+
+							--><rs-layer
+								id="slider-1-slide-2-layer-4" 
+								class="Concept-SubTitle"
+								data-type="text"
+								data-color="#bf0a30||#e9204f||#e9204f||#e9204f"
+								data-rsp_ch="on"
+								data-xy="x:c;y:m;yo:-42px,-47px,-55px,-72px;"
+								data-text="w:normal,nowrap,nowrap,nowrap;s:21,20,20,15;l:21,25,20,20;fw:700;a:center,center,left,left;"
+								data-dim="w:446px,424px,auto,auto;"
+								data-padding="b:10;"
+								data-frame_0="o:1;"
+								data-frame_0_chars="d:5;y:100%;o:0;rZ:-35deg;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:640;sp:1200;sR:640;"
+								data-frame_1_chars="e:power4.inOut;d:10;rZ:0deg;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:4960;"
+								data-frame_999_reverse="x:true;"
+								style="z-index:11;font-family:'Open Sans';text-transform:uppercase;"
+							>WE'RE BUILDING THEM A HOME 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-2-layer-14" 
+								data-type="text"
+								data-rsp_ch="on"
+								data-xy="x:c;y:m,t,t,t;yo:78px,312px,271px,234px;"
+								data-text="w:normal;s:18,18,16,15;l:31,30,30,27;a:center;"
+								data-dim="w:806px,805px,689px,388px;h:auto,auto,auto,89px;"
+								data-frame_0="y:100%;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:2680;sp:1360;sR:2680;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:w;sR:4960;"
+								style="z-index:9;font-family:'Open Sans';"
+							>Jesus is holy, loving, and worthy of all our worship and devotion. You will feel heaven in our Zegen Church. Join us and Praise the Lord Jesus.
+ 
+							</rs-layer><!--
+
+							--><!--
+
+							--><rs-layer
+								id="slider-1-slide-2-layer-21" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;yo:228px,133px,102px,89px;"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:67px,60px,56px,45px;h:67px,60px,56px,45px;"
+								data-frame_0="x:100%;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:210;sp:1000;sR:210;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:w;sR:7790;"
+								style="z-index:12;"
+							> 
+							</rs-layer><!--
+-->						</rs-slide>
+						<!-- <rs-slide style="position: absolute;" data-key="rs-3" data-title="Web Show" data-thumb="" data-anim="adpr:false;e:slidingoverlay;ms:2000;" data-in="o:1;x:(100%);" data-out="a:false;">
+							<img src="" alt="Non Profit Wordpress Theme" title="zmain-slider-2.jpg" width="1536" height="864" class="rev-slidebg tp-rs-img rs-lazyload" data-lazyload="images/2.jpg" data-parallax="5" data-no-retina>
+
+							<h1
+								id="slider-1-slide-3-layer-2" 
+								class="rs-layer Concept-Title"
+								data-type="text"
+								data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)"
+								data-rsp_ch="on"
+								data-xy="x:c;y:m;yo:10px,0,-10px,-38px;"
+								data-text="w:normal,nowrap,nowrap,normal;s:54,50,45,28;l:52,55,50,30;ls:3px;fw:700;a:center;"
+								data-dim="w:922px,845px,736px,478px;h:62px,auto,auto,35px;"
+								data-padding="b:10;"
+								data-frame_0="sX:2;sY:2;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="e:power2.out;st:2110;sp:1270;sR:2110;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:5620;"
+								data-frame_999_reverse="x:true;"
+								style="z-index:10;font-family:'Poppins';text-transform:uppercase;"
+							>LET'S BRING THEM HOME 
+							</h1>
+
+							<rs-layer
+								id="slider-1-slide-3-layer-4" 
+								class="Concept-SubTitle"
+								data-type="text"
+								data-color="#bf0a30||#e9204f||#e9204f||#e9204f"
+								data-rsp_ch="on"
+								data-xy="x:c;y:m;yo:-42px,-47px,-55px,-76px;"
+								data-text="w:normal,nowrap,nowrap,nowrap;s:21,20,20,15;l:21,25,20,20;fw:700;a:center,center,left,left;"
+								data-dim="w:446px,424px,auto,auto;"
+								data-padding="b:10;"
+								data-frame_0="o:1;"
+								data-frame_0_chars="d:5;y:100%;o:0;rZ:-35deg;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:640;sp:1200;sR:640;"
+								data-frame_1_chars="e:power4.inOut;d:10;rZ:0deg;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:4960;"
+								data-frame_999_reverse="x:true;"
+								style="z-index:11;font-family:'Open Sans';text-transform:uppercase;"
+							>YOU CAN HELP FOR THEM 
+							</rs-layer>
+
+							<rs-layer
+								id="slider-1-slide-3-layer-14" 
+								data-type="text"
+								data-rsp_ch="on"
+								data-xy="x:c;y:m,t,t,t;yo:78px,312px,271px,228px;"
+								data-text="w:normal;s:18,18,16,15;l:31,30,30,27;a:center;"
+								data-dim="w:806px,805px,689px,388px;h:auto,auto,auto,89px;"
+								data-frame_0="y:100%;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:2680;sp:1360;sR:2680;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:w;sR:4960;"
+								style="z-index:9;font-family:'Open Sans';"
+							>Zegen Church WordPress Theme comes with sermons, ministries, events, testimonies, staff members, church locations shortcodes to enhance your website. 
+							</rs-layer>
+
+							<a
+								id="slider-1-slide-3-layer-16" 
+								class="rs-layer res-slide-btn pop rev-btn"
+								href="ministries-grid-2.html" target="_self"
+								data-type="button"
+								data-color="rgba(255,255,255,1)"
+								data-xy="x:c;y:m;yo:162px,156px,128px,112px;"
+								data-text="s:16,16,14,14;l:17;fw:500;a:center;"
+								data-rsp_bd="off"
+								data-padding="t:15,15,10,10;r:35,35,25,25;b:15,15,10,10;l:35,35,25,25;"
+								data-border="bor:3px,3px,3px,3px;"
+								data-frame_0="y:100%;"
+								data-frame_1="e:power4.inOut;st:3160;sp:1200;sR:3160;"
+								data-frame_999="o:0;st:w;sR:4640;"
+								data-frame_hover="bgc:#000;boc:#000;bor:3px,3px,3px,3px;bos:solid;oX:50;oY:50;sp:0;"
+								
+							>
+							</a>
+
+							<rs-layer
+								id="slider-1-slide-3-layer-21" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;yo:228px,133px,102px,85px;"
+								data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
+								data-dim="w:67px,60px,56px,45px;h:67px,60px,56px,45px;"
+								data-frame_0="x:100%;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:210;sp:1000;sR:210;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:w;sR:7790;"
+								style="z-index:12;"
+							>
+							</rs-layer>
+					</rs-slide> -->
+
+
+					</rs-slides>
+					<rs-static-layers><!--
+					--></rs-static-layers>
+				</rs-module>
+				<script>
+					
+				</script>
+<script>
+		if(typeof revslider_showDoubleJqueryError === "undefined") {function revslider_showDoubleJqueryError(sliderID) {console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion.");console.log("To fix this, you can:");console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on");console.log("2. Find the double jQuery.js inclusion and remove it");return "Double Included jQuery Library";}}
+</script>
+			</rs-module-wrap>
+			<!-- Revolution Slider Section End -->
+            <!-- Page Content -->
+            <div class="content-wrapper pad-none">
+                <div class="content-inner">					
+					<!-- Events Section -->
+					<section id="feature-section" class="feature-section five-column-style pad-none">                        
+						<!-- Row -->
+						<div class="row">								
+							<div class="col-lg-2 bg-ct1 px-0">
+								<div class="feature-box-wrap f-box-style-2 pad-30 relative">
+									<div class="feature-box-details text-center">
+										<div class="feature-icon margin-bottom-25">
+											<span class="ti-heart b-radius-50"></span>
+										</div>
+										<div class="feature-content">
+											<div class="feature-title relative margin-bottom-15">
+												<h4 class="typo-white">News</h4>
+											</div>
+											<p class="mb-3">Learn the Lord Jesus by all your heart, you will be showered with his blessings and unconditional love.</p>
+										</div>
+										<div class="feature-btn">
+											
+											<a class="btn-link" href="#news-section">Read More</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Col -->
+							<div class="col-lg-2 bg-ct2 px-0">
+								<div class="feature-box-wrap f-box-style-2 pad-30 relative">
+									<div class="feature-box-details text-center">
+										<div class="feature-icon margin-bottom-25">
+											<span class="ti-heart b-radius-50"></span>
+										</div>
+										<div class="feature-content">
+											<div class="feature-title relative margin-bottom-15">
+												<h4 class="typo-white">Events</h4>
+											</div>
+											<p class="mb-3">Praising Lord Jesus everyday refreshes your soul and mind. Makes you connect with god and people.</p>
+										</div>
+										<div class="feature-btn">
+											<a class="btn-link" href="{% url 'event' %}">Read More</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Col -->
+							<div class="col-lg-2 bg-ct1 px-0">
+								<div class="feature-box-wrap f-box-style-2 pad-30 relative">
+									<div class="feature-box-details text-center">
+										<div class="feature-icon margin-bottom-25">
+											<span class="ti-heart b-radius-50"></span>
+										</div>
+										<div class="feature-content">
+											<div class="feature-title relative margin-bottom-15">
+												<h4 class="typo-white">Mass</h4>
+											</div>
+											<p class="mb-3">Jesus is holy, loving, and worthy of all our worship and devotion. Join us and Praise the Lord Jesus.</p>
+										</div>
+										<div class="feature-btn">
+											<a class="btn-link" href="{% url 'mass' %}">Read More</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Col -->
+							<div class="col-lg-2 bg-ct2 px-0">
+								<div class="feature-box-wrap f-box-style-2 pad-30 relative">
+									<div class="feature-box-details text-center">
+										<div class="feature-icon margin-bottom-25">
+											<span class="ti-heart b-radius-50"></span>
+										</div>
+										<div class="feature-content">
+											<div class="feature-title relative margin-bottom-15">
+												<h4 class="typo-white">Whishes</h4>
+											</div>
+											<p class="mb-3">Our Daily Prayer sessions make our people's life very beautiful and energetic to face the challenges.</p>
+										</div>
+										<div class="feature-btn">
+											<a class="btn-link" href="">Read More</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Col -->
+							<div class="col-lg-2 bg-ct1 px-0">
+								<div class="feature-box-wrap f-box-style-2 pad-30 relative">
+									<div class="feature-box-details text-center">
+										<div class="feature-icon margin-bottom-25">
+											<span class="ti-heart b-radius-50"></span>
+										</div>
+										<div class="feature-content">
+											<div class="feature-title relative margin-bottom-15">
+												<h4 class="typo-white">Readings</h4>
+											</div>
+											<p class="mb-3">We invite individuals for volunteer opportunities to be an active part of our organization.</p>
+										</div>
+										<div class="feature-btn">
+											<a class="btn-link" href="">Read More</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Row -->                        
+                    </section>
+                    <style>
+						/* Base styles for the section */
+.feature-section .feature-box-wrap {
+    padding: 30px;
+    text-align: center;
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    #feature-section .col-lg-2 {
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #feature-section .col-lg-2 {
+        width: 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #feature-section .col-lg-2 {
+        width: 33.33%;
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #feature-section .col-lg-2 {
+        width: 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #feature-section .col-lg-2 {
+        width: 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+					</style>
+					
+                    <!-- Events Section End -->
+					<!-- About Section -->
+                   
+					<section class="contact-form-section form-with-img bg-grey"  id="about-section">
+                        <div class="container">
+                            <div class="row">
+								<!-- col -->
+                                <div class="col-lg-6 align-self-center">                                    
+                                    <!-- Contact Form -->
+                                    <div class="contact-img">
+										<img src="{% static 'images/9.jpg' %}" class="" alt="about-img">
+									</div>
+                                </div> 
+								<!-- .col -->
+                                <div class="col-lg-6 ps-lg-5">
+                                    <div class="contact-info info-2">
+										<div class="section-title margin-bottom-50">
+											<span class="sub-title theme-color text-uppercase">About Us</span>
+											<h2 class="section-title margin-top-5">History of the Parish</h2>
+											<span class="border-bottom"></span>												
+										</div>
+										<div class="margin-bottom-30">
+											<p class="mb-0" style="color:black;">The Syro-Malabar Catholic Church is one of 22 Eastern (Oriental) Catholic Churches in full communion with the Vatican. It is the second largest Eastern Catholic Church after the Ukrainian Church and with 4.6 million believers, is the largest of the Saint Thomas Christian (Nazrani) denominations. The Syro-Malabar Church traces its origins to St. Thomas, the apostle who landed in Cranganore, India in 52 AD. St. Thomas was martyred in 72 A.D.in Mylapore, near Chennai/Madras. The members of the early Christian community in India were known as St. Thomas Christians. They were also called Nazranis, meaning “those who follow the path of Jesus of Nazareth”. Syro-Malabar Christians strive to live out the St. Thomas tradition in their own lives and share it with others wherever they live. The Syro-Malabar community in Louisville began with the migration of Indians to Kentucky, led by pioneer P.J. Joseph, who arrived in Kentucky in 1961. In the beginning American Catholic Priests served the spiritual needs of Syro-Malabar people living in Kentucky. In 2001, March Jacob Angadiyath became the first Syro-Malabar bishop, serving the Chicago Diocese. In 2005, on the feast of St. Thomas, the Syro-Malabar community in Louisville celebrated Holy Mass in its own rite for the first time. Frs. Andrew Athappilly CMI and Baby Shephered CMI were leading figures in the organization of this movement. This community continued to grow as job opportunities at Louisville’s Norton Hospital continued to increase.</p>
+										</div>
+										<!-- Feature List -->
+										
+										
+										
+										
+                                    </div>									
+                                </div>
+                                 <!-- Col -->                                                               
+                            </div>
+                        </div>
+                    </section>
+
+					<section id="portfolio-section" class="portfolio-section pad-top-120">
+						<div class="container">
+							<div class="row">
+								<div class="offset-md-2 col-md-8">
+									<div class="title-wrap text-center">
+										<div class="section-title">
+											<span class="sub-title theme-color text-uppercase">Gallery</span>
+											<h2 class="section-title margin-top-5">Our Gallery</h2>
+											<span class="border-bottom center"></span>
+										</div>
+									</div>
+								</div>
+								
+								<!-- Portfolio Main Slider -->
+								<div class="owl-carousel portfolio-default popup-gallery" 
+									 data-loop="1" data-nav="0" data-dots="1" data-autoplay="1"
+									 data-autoplaypause="1" data-autoplaytime="5000" data-smartspeed="1000"
+									 data-margin="30" data-items="3" data-items-tab="2" data-items-mob="1">
+									
+									<!-- Loop through gallery items dynamically -->
+									{% for item in gallery %}
+									<div class="item">
+										<div class="portfolio-item portfolio-overlay-wrap">
+											<div class="portfolio-thumb relative b-radius-6 o-hide">
+												<img src="{{ item.gallery_image.url }}" class="img-fluid" width="700" height="466" alt="{{ item.gallery_name }}" title="{{ item.gallery_name }}" />
+												<div class="portfolio-wrap">
+													<div class="portfolio-details-overlay">
+														<div class="portfolio-icons">
+															<a href="{{ item.gallery_image.url }}" class="popup-img" title="{{ item.gallery_name }}">
+																<i class="ti-zoom-in"></i>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									{% endfor %}
+									<!-- End loop -->
+								</div>
+								<!-- Portfolio Owl Slider Ends -->
+							</div>
+						</div>
+					</section>
+					
+				
+                    <!-- About Section End -->
+					<!-- Get a Quote Section -->
+                    
+                    <!-- Get a Quote Section End -->
+					<!-- Ministries Section -->
+                    
+                    <!-- Ministries Section End -->
+					<!-- Contact Section -->
+                    <section class="contact-form-section typo-white section-bg-img o-visible pad-top-80 pad-bottom-160" data-bg="{% static 'images/12.jpg' %}">
+						<div class="shape-bottom" data-negative="false">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+								<path class="shape-fill" opacity="0.33" d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z"></path>
+								<path class="shape-fill" opacity="0.66" d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z"></path>
+								<path class="shape-fill" d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"></path>
+							</svg>
+						</div>
+						<div class="container">
+							<!-- Row -->
+							<div class="row text-center">
+								<!-- Col -->
+								<div class="col-md-12">
+									<div class="get-quote-1">
+										<!-- video wrap -->
+										<div class="video-wrap wrap-stretch relative margin-bottom-50">
+											<!-- video details -->
+											<div class="video-wrap-details">
+												{% for video in video %}
+												<!-- video button -->
+												<div class="video-play-btn text-center">
+													<div class="video-icon">
+														<a class="popup-youtube box-shadow1" href="{{ video.About_video }}">
+															<i class="ti-heart"></i>
+														</a>
+													</div>
+												</div>
+												{% endfor %}
+												<!-- video details End-->
+											</div>
+											<!-- video wrap end -->
+											<div class="title-wrap mb-0">
+												<div class="section-title typo-white margin-bottom-40">
+													<h2 class="title mb-3">“Pray! And listen to God! You can do this alone, but find somebody to do it with you”</h2>
+													<span class="dancing-text">Real Story Cross Journey from Anna Hampton</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Col -->
+							</div>
+							<!-- Row -->
+						</div>
+					</section>
+					
+                    <!-- Contact Form Section End -->
+                    <!-- Blog Section -->
+                    <section class="blog-section pad-top-50 pad-bottom-95" id="news-section">
+						<div class="container">
+							<!-- Blog Wrap -->
+							<div class="row">
+								<div class="col-md-12">
+									<div class="title-wrap text-center">
+										<div class="section-title">
+											<span class="sub-title theme-color text-uppercase">Our Blog</span>
+											<h2 class="section-title margin-top-5">Latest News</h2>
+											<span class="border-bottom center"></span>											
+										</div>
+									</div>
+									<div class="row">
+										<!-- Blog Main Slider -->
+										<div class="owl-carousel blog-main-wrapper blog-style-1" data-loop="1" data-nav="0" data-dots="1" data-autoplay="0" data-autoplaypause="1" data-autoplaytime="5000" data-smartspeed="1000" data-margin="30" data-items="3" data-items-tab="2" data-items-mob="1">
+											<!-- Loop through the news queryset -->
+											{% for item in news %}
+											<!-- Item -->
+											<div class="item">
+												<!-- Blog Inner -->
+												<div class="blog-inner">
+													<div class="blog-thumb relative">
+														<!-- Dynamic Image -->
+														<img src="{{ item.main_image.url }}" class="img-fluid" width="768" height="600" alt="{{ item.news_heading }}" />
+														<div class="top-meta">
+															<ul class="top-meta-list">
+																<li>
+																	<div class="post-date">
+																		<!-- Dynamic Date -->
+																		<a href=""><i class="ti-calendar"></i> {{ item.date|date:"M d, Y" }}</a>
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="blog-details">
+														<div class="blog-title">
+															<!-- Dynamic Heading -->
+															<h4 class="margin-bottom-10">
+																<a href="" class="blog-name">{{ item.news_heading }}</a>
+															</h4>
+														</div>
+														<div class="post-desc mt-2">
+															<!-- Dynamic Read More Link (if you want to link to a details page, update the href) -->
+															<div class="blog-link">
+																<a target="_blank" href="" class="link font-w-500">Read More</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- Blog Inner Ends -->
+											</div>
+											<!-- Item Ends -->
+											{% endfor %}
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Blog Wrap -->
+						</div>
+					</section>
+					
+                    <!-- Blog Section End -->
+                </div>
+            </div>
+        </div>
+        <!-- .page-wrapper-inner -->
+    </div>
+    <!--page-wrapper-->
+
+    <!-- Footer -->
+    <footer id="footer" class="footer footer-1 footer-bg-img" data-bg="{% static 'images/12.jpg' %}">
+        <!--Footer Widgets Columns Posibilities 4-->
+        <div class="footer-widgets">
+            <div class="footer-middle-wrap footer-overlay-dark">
+				<div class="color-overlay"></div>
+                <div class="container">
+                    <div class="row">
+                         <div class="col-lg-3 widget text-widget">
+							<div class="widget-title">
+                                <!-- Title -->
+                                <h3 class="title typo-white">About Us</h3>
+                            </div>
+                            <!-- Text -->
+                            <div class="widget-text margin-bottom-30">
+								<p>The Syro-Malabar Catholic Church is one of 22 Eastern (Oriental) Catholic Churches in full communion with the Vatican. It is the second largest Eastern Catholic Church after the Ukrainian Church and with 4.6 million believers, is the largest of the Saint Thomas Christian (Nazrani) denominations.</p>
+							</div>
+							<div class="social-icons">
+								<a href="" class="social-fb"><span class="ti-facebook"></span></a>
+								<a href="" class="social-twitter"><span class="ti-twitter"></span></a>
+								<a href="" class="social-instagram"><span class="ti-instagram"></span></a>
+								
+								<a href="" class="social-youtube"><span class="ti-youtube"></span></a>
+							</div>                            
+                        </div>
+						<!-- Col -->
+						<div class="col-lg-3 widget text-widget">
+							<div class="widget-title">
+                                <!-- Title -->
+                                <h3 class="title typo-white">Quick Links</h3>
+                            </div>
+                            <!-- Text -->
+                            <div class="menu-quick-links">
+								<ul class="menu">
+									<li class="menu-item"><a href="{% url 'index' %}">Home</a></li>
+									<li class="menu-item"><a href="#">Who We Are?</a></li>
+									<li class="menu-item"><a href="{% url 'administration' %}">Administration</a></li>
+									<li class="menu-item"><a href="{% url 'gallery' %}">Gallery</a></li>
+									
+									<li class="menu-item"><a href="{% url 'mass' %}">Masses</a></li>
+								</ul>
+							</div>                           
+                        </div>
+                        
+						<div class="col-lg-3 widget text-widget">
+							<div class="widget-title">
+                                <!-- Title -->
+                                <h3 class="title typo-white">Quick Links</h3>
+                            </div>
+                            <!-- Text -->
+                            <div class="menu-quick-links">
+								<ul class="menu">
+									<li class="menu-item"><a href="{% url 'blog' %}">Blog</a></li>
+									<li class="menu-item"><a href="{% url 'wish' %}">Wishes</a></li>
+									<li class="menu-item"><a href="">Readings</a></li>
+									<li class="menu-item"><a href="">News</a></li>
+									<li class="menu-item"><a href="{% url 'contact' %}">Contact</a></li>
+								</ul>
+							</div>                           
+                        </div>
+                       
+                        <div class="col-lg-3 widget contact-info-widget">
+                            <div class="widget-title">
+                              
+                                <h3 class="title typo-white">Contact Details</h3>
+                            </div>
+                            <p></p>
+							{% comment %} <div class="mailchimp-widget-wrap">
+								
+								<form id="subscribe-form-1" class="subscribe-form" action="inc/function.php">
+									<div class="input-group add-on">
+										<input type="text" class="form-control" name="mcemail" autocomplete="off" id="mcemail-1" placeholder="Email Address">
+										<div class="input-group-btn">
+											<button class="btn btn-default subscribe-btn" type="submit">Sign Up</button>
+										</div>
+									</div>
+									<p class="subscribe-status-msg hide"></p>
+								</form>
+							</div> {% endcomment %}
+                        </div>
+						<!-- Col -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Footer Copyright Columns Posibilities 4-->
+        <div class="footer-copyright">
+            <div class="footer-bottom-wrap pad-tb-20 typo-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="footer-bottom-items pull-left">
+                                <li class="nav-item">
+                                    <div class="nav-item-inner">
+                                         Designed by <a href="https://tinos.co.in/">Tinos</a><span class="heart-color">♥</span>
+                                    </div>
                                 </li>
                             </ul>
-                        </nav>
-                    </div>
-                    <!--church cart menu-->
-                    {% comment %} <div class="cart_items_show">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div> {% endcomment %}
-                     
-                </div>            
-            </div>
-        </header>
-        <!--church header ends-->
-
-		
-		<!--banner version 02 start-->
-        {% comment %} <div class="banner_version_02 banner_2">
-			
-            <ul class="full-banner sb-slider">
-				<li>
-					<img src="{% static 'images/dw1.jpg' %}"  alt="image1"/ >
-					<div class="slider-caption version-02 container">
-						
-						<span class="map_location"><i class="fa fa-map-marker"></i>Saint Jose Stadium Parker State, New City</span>
-					</div>
-				</li>
-				<li>
-					<img src="{% static 'images/2.jpg' %}" alt="image1"/>
-					<div class="slider-caption version-02 container">
-						
-						<span class="map_location"><i class="fa fa-map-marker"></i>Saint Jose Stadium Parker State, New City</span>
-					</div>
-				</li>
-				<li>
-					<img src="{% static 'images/3.jpg' %}" alt="image1"/>
-					<div class="slider-caption version-02 container">
-						
-						<span class="map_location"><i class="fa fa-map-marker"></i>Saint Jose Stadium Parker State, New City</span>
-					</div>
-				</li>
-				<li>
-					<img src="{% static 'images/5.jpg' %}" alt="image1"/>
-					<div class="slider-caption version-02 container">
-						
-						<div class="large_text">God Is Love</div>
-						<span class="map_location"><i class="fa fa-map-marker"></i>Saint Jose Stadium Parker State, New City</span>
-					</div>
-				</li>
-			</ul>
-			
-           
-            <div class="nav-dots">
-                <span class="nav-dot-current"></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>  {% endcomment %}
-		
-		
-		
-		<div class="slider-version3 default_arrows">
-            <div class="slider-detail overlay-b">
-                <img src="{% static 'images/1.jpg' %}" alt="img here">
-                <div class="item_caption position-left">
-                    <div class="custom-font-30px">You can make many Plans but <br>lords plan will pREVAIL.</div>
-                </div>
-            </div>
-            <div class="slider-detail overlay-b">
-                <img src="{% static 'images/2.jpg' %}" alt="img here">
-                <div class="item_caption position-center">
-                    <div class="custom-font-30px">You can make many Plans but <br>lords plan will pREVAIL.</div>
-                </div>
-            </div>
-            <div class="slider-detail overlay-b">
-                <img src="{% static 'images/3.jpg' %}" alt="img here">
-                <div class="item_caption position-right">
-                    <div class="custom-font-30px">You can make many Plans but <br>lords plan will pREVAIL.</div>
-                </div>
-            </div>
-        </div>
-		<!--banner version 02 ends-->
-		<div class="content">
-			
-			<div class="church_caption_wrap" id="about-section">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6 col-sm-6 col-xs-12">
-							
-							<div class="church_text">
-								<h3>History of the Parish</h3>
-								<p>The Syro-Malabar Catholic Church is one of 22 Eastern (Oriental) Catholic Churches in full communion with the Vatican. It is the second largest Eastern Catholic Church after the Ukrainian Church and with 4.6 million believers, is the largest of the Saint Thomas Christian (Nazrani) denominations. The Syro-Malabar Church traces its origins to St. Thomas, the apostle who landed in Cranganore, India in 52 AD. St. Thomas was martyred in 72 A.D. in Mylapore, near Chennai/Madras. The members of the early Christian community in India were known as St. Thomas Christians. They were also called Nazranis, meaning “those who follow the path of Jesus of Nazareth”. Syro-Malabar Christians strive to live out the St. Thomas tradition in their own lives and share it with others wherever they live. The Syro-Malabar community in Louisville began with the migration of Indians to Kentucky, led by pioneer P.J. Joseph, who arrived in Kentucky in 1961. In the beginning American Catholic Priests served the spiritual needs of Syro-Malabar people living in Kentucky. In 2001, March Jacob Angadiyath became the first Syro-Malabar bishop, serving the Chicago Diocese. In 2005, on the feast of St. Thomas, the Syro-Malabar community in Louisville celebrated Holy Mass in its own rite for the first time. Frs. Andrew Athappilly CMI and Baby Shephered CMI were leading figures in the organization of this movement. This community continued to grow as job opportunities at Louisville’s Norton Hospital continued to increase.</p>
-								
-								
-								<div id="moreContent" style="display:none;">
-									<p>Over the years, the mission gained attention from the diocese and Frs. Roy Kaduppil and George Madathiparambil began celebrating Mass in the undercroft of the Cathedral of Assumption on every second Saturday of the month. In 2008 Fr. Joy Choorapanthiyil led the Louisville Syro-Malabar community, followed by Fr. Joel Koikkara OFMConv. In 2011 Fr. John Pozhathuparambil OFMConv. was officially appointed as the first mission director. One of the central missions of the Franciscan conventuals is to establish a Young Adult Ministry in Louisville.<br> With the arrival of Fr. Leo Payyappilly in 2012 and Fr. Tony Vattapparambil in 2013 Fr. Deljo Puthoor CMI in 2013 and Fr. George Munjanattu in 2015 the community has become more vibrant and active. On March 10, 2013, Bishop Jacob Angadiyath officially dedicated the mission to Divine Mercy, marking a milestone in Syro-Malabar history.</p>
-								</div>
-								
-								<a href="#" class="default_small_btn theme-bg_btn" id="readMoreBtn" onclick="toggleReadMore()">Read More</a>
-								{% comment %} <button id="readMoreBtn" onclick="toggleReadMore()">Read More</button> {% endcomment %}
-							</div>
-							
-						</div>
-                        
-						<div class="col-md-6 col-sm-6 col-xs-12">
-							<div class="church_home_fig">
-								<figure>
-									<img src="{% static 'images/20.jpg' %}" alt="">
-								</figure>
-							</div>
-						</div>
-                        {% comment %} <a class="default_small_btn btn_2" href="#">Read More</a> {% endcomment %}
-					</div>
-				</div>
-			</div>
-			
-            
-			<!--church caption wrap ends-->
-			
-			<!--church service post start-->
-    		<section class="church_service_post">
-    			<div class="container">
-    				<div class="row">
-    					<div class="col-md-8 col-sm-12 col-xs-12">
-    						<div class="row">
-    							<div class="col-md-6 col-sm-6 col-xs-12">
-    								<div class="church_service_post_fig margin-bottom">
-    									<figure>
-    										<img src="{% static 'images/1.jpg' %}" alt="image1"/>
-    										
-    									</figure>
-    								</div>
-    							</div>
-    							<div class="col-md-6 col-sm-6 col-xs-12">
-    								<div class="church_service_post_fig margin-bottom">
-    									<figure>
-    										<img src="{% static 'images/2.jpg' %}" alt="image1"/>
-    										
-    									</figure>
-    								</div>
-    							</div>
-    							<div class="col-md-12 col-sm-12 col-xs-12">
-    								<div class="church_service_post_fig no-padding">
-    									<figure >
-    										<img src="{% static 'images/12.jpg' %}" alt="image1"/>
-    										
-    									</figure>
-    								</div>
-    							</div>
-								
-								
-    						</div>
-    					</div>
-    					<div class="col-md-4 col-sm-12 col-xs-12">
-    						<div class="church_service_post_fig responsive_991">
-    							<figure >
-    								<img src="{% static 'images/7.jpg' %}" alt="image1"/>
-    								
-    							</figure>
-    						</div>
-    						<div class="church_service_post_fig extra-padding responsive_991">
-    							<figure >
-    								<img src="{% static 'images/5.jpg' %}" alt="image1"/>
-    								
-    							</figure>
-    						</div>
-    					</div>
-    				</div>
-    			</div>
-    		</section>
-			<section class="church_lastest_blog">
-                <div class="container">
-                    <div class="church_heading align_center">
-                        <h3>Latest News</h3>
-                        <span><sup class="icon-cross"></sup></span>
-                    </div>
-                    <div class="church_blog_posts">
-                        <div class="row">
-                            <!-- Loop through news queryset -->
-                            {% for item in news %}
-                                <div class="col-md-4 col-sm-6 col-xs-12">
-                                    <div class="church_blog_columns">
-                                        <figure>
-                                            <!-- Display dynamic main image -->
-                                            <img src="{{ item.main_image.url }}" alt="{{ item.news_heading }}">
-                                        </figure>
-                                        <div class="church_blog_content">
-                                            <ul class="meta_address ch_position-up">
-                                                <!-- Display dynamic date -->
-                                                <li><a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i>{{ item.date|date:"F d, Y" }}</a></li>
-                                            </ul>
-                                            <!-- Display dynamic news heading -->
-                                            <h4><a href="{% url 'news_details' item.id %}">{{ item.news_heading }}</a></h4>
-                                            
-                                            {% comment %} <p>{{ item.description| safe }}</p> {% endcomment %}
-                                            {% comment %} <div class="church_blog_footer">
-                                                <ul class="meta_address ch_position-bottom">
-                                                    <li><a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i>12</a></li>
-                                                    <li><a href="#"><i class="fa fa-eye" aria-hidden="true"></i>546</a></li>
-                                                </ul>
-                                                <ul class="social-icons">
-                                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                                </ul> {% endcomment %}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            {% endfor %}
+                            <ul class="footer-bottom-items footer-menu pull-right">
+                                <li class="nav-item">               
+                                    <a href="#">Privacy</a>
+                                </li>
+								<li class="nav-item">               
+                                    <a href="#">Sermons</a>
+                                </li>
+								<li class="nav-item">               
+                                    <a href="#">Contact Us</a>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
-                </div>
-            </section>
-            
-    		<!--church service post end-->
-			
-			<!--church blog medium wrap start-->
-	        {% comment %} <div class="church_blog_medium_wrap">
-				<div class="container">
-					
-					<div class="church_heading align_center color">
-						<h3>Our Ministry</h3>
-						<span ><sup class="icon-cross"></sup></span>
-					</div>
-					
-					<div class="row">
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="church_blog_fig">
-								<figure class="overlay">
-									<img src="{% static 'extra-images/ch_ministry.jpg' %}" alt="">
-								</figure>
-								<div class="church_blog_fig_text">
-									<h4>Children’s Ministry</h4>
-									<p>Praesent eget metus ligula. In tempus fermentum dui. Praesent tempus velit facilisis, ultricies nunc sed, sodales mi. Ut quis gravida urna</p>
-									<a class="default_small_btn btn_2" href="#">Read More</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="church_blog_fig">
-								<figure class="overlay">
-									<img src="{% static 'extra-images/ch_ministry1.jpg' %}" alt="">
-								</figure>
-								<div class="church_blog_fig_text">
-									<h4>Women’s Ministry</h4>
-									<p>Praesent eget metus ligula. In tempus fermentum dui. Praesent tempus velit facilisis, ultricies nunc sed, sodales mi. Ut quis gravida urna</p>
-									<a class="default_small_btn btn_2" href="#">Read More</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="church_blog_fig">
-								<figure class="overlay">
-									<img src="{% static 'extra-images/ch_ministry2.jpg' %}" alt="">
-								</figure>
-								<div class="church_blog_fig_text">
-									<h4>Men’s Ministry</h4>
-									<p>Praesent eget metus ligula. In tempus fermentum dui. Praesent tempus velit facilisis, ultricies nunc sed, sodales mi. Ut quis gravida urna</p>
-									<a class="default_small_btn btn_2" href="#">Read More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div> {% endcomment %}
-			<!--church blog medium wrap ends-->
-			{% comment %} <div class="our-team">
-				<div class="container">
-					<div class="church_heading align_center">
-						<h3>Our Team</h3>
-						<span><sup class="icon-cross"></sup></span>
-					</div>
-					<div class="row">
-						{% for member in administration_team %}
-						<div class="col-md-3 col-sm-6 col-xs-12">
-							<div class="our_team_column">
-								<figure>
-									<img src="{{ member.image.url }}" alt="{{ member.name }}">
-									<div class="our_team_services">
-										<ul class="social-icons">
-											<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-camera" aria-hidden="true"></i></a></li>
-										</ul>
-									</div>
-								</figure>
-								<div class="our_team_caption">
-									<a href="#">{{ member.name }}</a>
-									<span>{{ member.designation }}</span>
-								</div>
-							</div>
-						</div>
-						{% endfor %}
-					</div>
-				</div>
-			</div> {% endcomment %}
-			
-	        
-			
-			{% comment %} <div class="church_latest_wrap">
-				
-				<div class="church_heading align_center color">
-					<h3>Latest Sermons</h3>
-					<span ><sup class="icon-cross"></sup></span>
-				</div>
-				
-				<ul class="church_full_row">
-					<li>
-						<div class="church_latest_fig">
-							<figure class="overlay">
-								<img src="{% static 'extra-images/latest.jpg' %}" alt="#">
-							</figure>
-							<div class="church_latest_text">
-								<div class="church_playing-options icon">
-									<ul>
-										<li><a href=""><i class="fa fa-headphones" aria-hidden="true"></i></a></li>
-										<li><a href=""><i class="fa fa-play" aria-hidden="true"></i></a></li>
-										<li><a href=""><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></li>
-										<li><a href=""><i class="fa fa-cloud-download" aria-hidden="true"></i></a></li>
-									</ul>
-								</div>
-								<div class="church_latest_des">
-									<ul class="church_meta_date">
-										<li><a href="#">Speaker:   <span>David Smith</span>   ,</a></li>
-										<li><a href="#">Date:   <span>4/25/2017</span>  </a></li>
-									</ul>
-									<p>Nullam et pretiquam. Vivamus eu turpis sit amet tortor lobort commodo. Fusce vitae ligula dolor. Integer cursus at ..</p>
-									<a class="default_small_btn btn_2" href="#">Read More</a>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="church_latest_fig">
-							<figure class="overlay">
-								<img src="{% static 'extra-images/latest1.jpg' %}" alt="#">
-							</figure>
-							<div class="church_latest_text">
-								<div class="church_playing-options icon">
-									<ul>
-										<li><a href=""><i class="fa fa-headphones" aria-hidden="true"></i></a></li>
-										<li><a href=""><i class="fa fa-play" aria-hidden="true"></i></a></li>
-										<li><a href=""><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></li>
-										<li><a href=""><i class="fa fa-cloud-download" aria-hidden="true"></i></a></li>
-									</ul>
-								</div>
-								<div class="church_latest_des">
-									<ul class="church_meta_date">
-										<li><a href="#">Speaker:   <span>David Smith</span>   ,</a></li>
-										<li><a href="#">Date:   <span>4/25/2017</span>  </a></li>
-									</ul>
-									<p>Nullam et pretiquam. Vivamus eu turpis sit amet tortor lobort commodo. Fusce vitae ligula dolor. Integer cursus at ..</p>
-									<a class="default_small_btn btn_2" href="#">Read More</a>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="church_latest_fig">
-							<figure class="overlay">
-								<img src="{% static 'extra-images/latest2.jpg' %}" alt="#">
-							</figure>
-							<div class="church_latest_text">
-								<div class="church_playing-options icon">
-									<ul>
-										<li><a href=""><i class="fa fa-headphones" aria-hidden="true"></i></a></li>
-										<li><a href=""><i class="fa fa-play" aria-hidden="true"></i></a></li>
-										<li><a href=""><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></li>
-										<li><a href=""><i class="fa fa-cloud-download" aria-hidden="true"></i></a></li>
-									</ul>
-								</div>
-								<div class="church_latest_des">
-									<ul class="church_meta_date">
-										<li><a href="#">Speaker:   <span>David Smith</span>   ,</a></li>
-										<li><a href="#">Date:   <span>4/25/2017</span>  </a></li>
-									</ul>
-									<p>Nullam et pretiquam. Vivamus eu turpis sit amet tortor lobort commodo. Fusce vitae ligula dolor. Integer cursus at ..</p>
-									<a class="default_small_btn btn_2" href="#">Read More</a>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="church_latest_fig">
-							<figure class="overlay">
-								<img src="{% static 'extra-images/latest3.jpg' %}" alt="#">
-							</figure>
-							<div class="church_latest_text">
-								<div class="church_playing-options icon">
-									<ul>
-										<li><a href=""><i class="fa fa-headphones" aria-hidden="true"></i></a></li>
-										<li><a href=""><i class="fa fa-play" aria-hidden="true"></i></a></li>
-										<li><a href=""><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></li>
-										<li><a href=""><i class="fa fa-cloud-download" aria-hidden="true"></i></a></li>
-									</ul>
-								</div>
-								<div class="church_latest_des">
-									<ul class="church_meta_date">
-										<li><a href="#">Speaker:   <span>David Smith</span>   ,</a></li>
-										<li><a href="#">Date:   <span>4/25/2017</span>  </a></li>
-									</ul>
-									<p>Nullam et pretiquam. Vivamus eu turpis sit amet tortor lobort commodo. Fusce vitae ligula dolor. Integer cursus at ..</p>
-									<a class="default_small_btn btn_2" href="#">Read More</a>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="church_latest_fig">
-							<figure class="overlay">
-								<img src="{% static 'extra-images/latest4.jpg' %}" alt="#">
-							</figure>
-							<div class="church_latest_text">
-								<div class="church_playing-options icon">
-									<ul>
-										<li><a href=""><i class="fa fa-headphones" aria-hidden="true"></i></a></li>
-										<li><a href=""><i class="fa fa-play" aria-hidden="true"></i></a></li>
-										<li><a href=""><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></li>
-										<li><a href=""><i class="fa fa-cloud-download" aria-hidden="true"></i></a></li>
-									</ul>
-								</div>
-								<div class="church_latest_des">
-									<ul class="church_meta_date">
-										<li><a href="#">Speaker:   <span>David Smith</span>   ,</a></li>
-										<li><a href="#">Date:   <span>4/25/2017</span>  </a></li>
-									</ul>
-									<p>Nullam et pretiquam. Vivamus eu turpis sit amet tortor lobort commodo. Fusce vitae ligula dolor. Integer cursus at ..</p>
-									<a class="default_small_btn btn_2" href="#">Read More</a>
-								</div>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</div> {% endcomment %}
-			<!--church latest wrap end-->
-
-			
-			
-			<!--church news wrap start-->
-			
-			<!--church news wrap end-->
-			
-			<!--church causes wrap start-->
-			<div class="church_causes_wrap">
-				<div class="container">
-					
-				</div>
-			</div>
-			<!--church causes wrap end-->
-			
-			<!--church postar wrap start-->
-
-			{% comment %} <div class="church_postor_wrap overlay">
-				<div class="container">
-					
-					<div class="church_postor_row">
-						<div class="church_postor_fig">
-							<figure>
-								<img src="{% static 'extra-images/postar.jpg' %}" alt="">
-							</figure>
-							<div class="church_postor_text">
-								<h4>History of the Parish</h4>
-								<h6>Pastor</h6>
-								<p>The Syro-Malabar Catholic Church is one of 22 Eastern (Oriental) Catholic Churches in full communion with the Vatican. It is the second largest Eastern Catholic Church after the Ukrainian Church and with 4.6 million believers, is the largest of the Saint Thomas Christian (Nazrani) denominations.
-
-									The Syro-Malabar Church traces its origins to St. Thomas, the apostle who landed in Cranganore, India in 52 AD.</p>
-							</div>
-						</div>
-					</div>
-					
-				</div>
-			</div> {% endcomment %}
-
-			<!--church postar wrap end-->
-			
-			<!--church blog post wrap start-->
-			{% comment %} <div class="church_blog_post_wrap">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-8 col-sm-12 col-xs-12">
-							<div class="church_blog_post_row">
-								<div class="church_blog_post_fig">
-									<figure class="overlay">
-										<img src="{% static 'extra-images/countdown_element.jpg' %}" alt="">
-									</figure>
-									<div class="church_blog_post_text">
-										<h4>Sed hendrerit elit mauris a elementum</h4>
-										<div class="post_comment">
-											<span>Organizer:   David Smith</span>
-											<i>,</i>
-											<a href="#"> Comments:    13</a>
-										</div>
-										<ul class="countdown">
-											<li><h3 class="days">23</h3><span>Days</span></li>
-                                            <li><h3 class="hours">36</h3><span>Hours</span></li>
-                                            <li><h3 class="minutes">50</h3><span>Minutes</span></li>
-                                            <li><h3 class="seconds">18</h3><span>second</span></li>
-										</ul>
-										<p>Proin semper ipsum accumsan euismod blandit. Cras faucibus consectetur diam, vitae ornare ninterdum sed. Cras accumsan ultricies neque ac mattis.</p>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-4 col-sm-6 col-xs-12">
-										<div class="post_img_list">
-											<figure class="overlay">
-												<img src="{% static 'extra-images/countdown_element1.jpg' %}" alt="">
-											</figure>
-										</div>
-									</div>	
-									<div class="col-md-4 col-sm-6 col-xs-12">
-										<div class="post_img_list">
-											<figure class="overlay">
-												<img src="{% static 'extra-images/countdown_element2.jpg' %}" alt="">
-											</figure>
-										</div>
-									</div>	
-									<div class="col-md-4 col-sm-12 col-xs-12">
-										<div class="post_img_list">
-											<figure class="overlay">
-												<img src="{% static 'extra-images/countdown_element3.jpg' %}" alt="">
-											</figure>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12">
-							<div class="ch_ourshop_column">
-								<figure>
-									<img src="{% static 'extra-images/shop_items_01.png' %}" alt="">
-								</figure>
-								<div class="church_ourshop_content">
-									<small>TShirt</small>
-									<ul class="rateing_stars">
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-										<li><i class="fa fa-star" aria-hidden="true"></i></li>
-									</ul>
-									<div class="clearfix"></div>
-									<h5 class="pull-left"><a href="#">Menswear Shirt</a></h5>
-									<h5 class="pull-right">10$</h5>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div> {% endcomment %}
-			<!--church blog post wrap end-->
-			
-			<!--church prayer block start-->
-			{% comment %} <div class="church_prayer_block height padding-0">
-				<div class="container">
-					<div class="church_prayer_detail padding">
-						<h3>You can always make a Differnce <br>With belief.</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in convallis odio. Cras dui ex, ullamcorper eget rhoncus id, consequat non tortor.</p>
-						<a href="#" class="default_btn black-bg_btn">Join Us Now</a>
-					</div>
-					<div class="pull-right">
-						<figure>
-							<img src="{% static 'extra-images/prayer_short_img1.png' %}" alt="">
-						</figure>
-					</div>
-				</div>
-			</div> {% endcomment %}
-			<!--church prayer block end-->
-		</div>
-		<footer>
-            <div class="slider_images">
-                <div class="item_images">
-                    <a href="{% url 'gallery' %}">
-                        <img src="{% static 'images/2.jpg' %}" alt="">
-                        <i class="fa fa-instagram" ></i>
-                    </a>
-                </div>
-                <div class="item_images">
-                    <a href="{% url 'gallery' %}">
-                        <img src="{% static 'images/5.jpg' %}" alt="">
-                        <i class="fa fa-instagram"></i>
-                    </a>
-                </div>
-                <div class="item_images">
-                    <a href="{% url 'gallery' %}">
-                        <img src="{% static 'images/3.jpg' %}" alt="">
-                        <i class="fa fa-instagram" ></i>
-                    </a>
-                </div>
-                <div class="item_images">
-                    <a href="{% url 'gallery' %}">
-                        <img src="{% static 'images/8.jpg' %}" alt="">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <div class="item_images">
-                    <a href="{% url 'gallery' %}">
-                        <img src="{% static 'images/6.jpg' %}" alt="">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <div class="item_images">
-                    <a href="{% url 'gallery' %}">
-                        <img src="{% static 'images/7.jpg' %}" alt="">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <div class="item_images">
-                    <a href="{% url 'gallery' %}">
-                        <img src="{% static 'images/8.jpg' %}" alt="">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <div class="item_images">
-                    <a href="{% url 'gallery' %}">
-                        <img src="{% static 'images/9.jpg' %}" alt="">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <div class="item_images">
-                    <a href="{% url 'gallery' %}">
-                        <img src="{% static 'images/10.jpg' %}" alt="">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <div class="item_images">
-                    <a href="{% url 'gallery' %}">
-                        <img src="{% static 'images/11.jpg' %}" alt="">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <div class="item_images">
-                    <a href="{% url 'gallery' %}">
-                        <img src="{% static 'images/12.jpg' %}" alt="">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <div class="item_images">
-                    <a href="{% url 'gallery' %}">
-                        <img src="{% static 'images/13.jpg' %}" alt="">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-			<style>
-				.slider_images {
-					display: flex;
-					flex-wrap: wrap;
-					justify-content: space-around;
-				}
-				
-				{% comment %} .item_images {
-					width: 25%; /* Adjust width as needed */
-					padding: 10px;
-					box-sizing: border-box;
-				} {% endcomment %}
-				
-				.item_images img {
-					width: 100%;
-					height: 200px; /* Set a fixed height */
-					object-fit: cover; /* Ensures image is cropped nicely while maintaining aspect ratio */
-				}
-				
-				.item_images a {
-					display: block;
-					position: relative;
-				}
-				
-				{% comment %} .item_images i {
-					position: absolute;
-					bottom: 10px;
-					right: 10px;
-					color: #fff;
-					font-size: 24px;
-				} {% endcomment %}
-			</style>
-            <div class="footer_board">
-                <div class="container">
-                    <div class="background-logos">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="footer_detail">
-                                    <h4 class="footer_title">Divine Church</h4>
-                                    <p>The Syro-Malabar Catholic Church is one of 22 Eastern (Oriental) Catholic Churches in full communion with the Vatican.It is the second largest Eastern Catholic Church after the Ukrainian Church and with 4.6 million believers, is the largest of the Saint Thomas Christian (Nazrani) denominations.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="footer_blog">
-                                    <h4 class="footer_title">Usefull Links</h4>
-                                    <div class="footer_blog_post padding-top-0">
-                                       
-                                        <div class="footer-post-content">
-                                            <a href="{% url 'blog' %}">Blog</a>
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="footer_blog_post">
-                                       
-                                        <div class="footer-post-content">
-                                            <a href="{% url 'gallery' %}">Gallery</a>
-                                            
-                                        </div>
-                                    </div>
-									<div class="footer_blog_post">
-                                       
-                                        <div class="footer-post-content">
-                                            <a href="{% url 'contact' %}">Contact Us</a>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                            <div class="col-md-4">
-                                <div class="footer_blog">
-                                    <h4 class="footer_title">Our Address</h4>
-                                    {% comment %} <p>Nlis euismod mollis. Nullam con euismod mol.Nullam convallis euismod mollis.</p>
-                                    <span><i class="fa fa-envelope" aria-hidden="true"></i>Info@example.com</span>
-                                    <span><i class="fa fa-location-arrow" aria-hidden="true"></i>Joseph Colony, Allen Street New York</span>
-                                    <span><i class="fa fa-phone" aria-hidden="true"></i>+123456789</span> {% endcomment %}
-                                </div>
-                            </div>       
-                        </div>
-                    </div>
-                    {% comment %} <div class="footer_twitter">
-                        <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
-                        <div class="footer_twitter_caption">
-                            <p>Proin dapibus dapibus nunc, sit amet scelerisque est imperdiet tristique. Sed lobortis metus ut consequat,.<a href="">pikdfjsoamjdh</a></p>
-                            <small>2 Hours Ago</small>
-                        </div>
-                        <div class="pull-right"><a href="#" class="default_btn black-bg_btn">Follow us</a></div>
-                    </div> {% endcomment %}
-                    <div class="footer_other_sections">
-                        {% comment %} <div class="row">
-                            <div class="col-md-4">
-                                <div class="church_flicker">
-                                    <h4 class="footer_title">Flickr Feed</h4>
-                                    <ul class="church_flicker_gallery">
-                                        <li><a href="#"><img src="{% static 'extra-images/flicker_img01.jpg' %}" alt=""></a></li>
-                                        <li><a href="#"><img src="{% static 'extra-images/flicker_img02.jpg' %}" alt=""></a></li>
-                                        <li><a href="#"><img src="{% static 'extra-images/flicker_img03.jpg' %}" alt=""></a></li>
-                                        <li><a href="#"><img src="{% static 'extra-images/flicker_img04.jpg' %}" alt=""></a></li>
-                                        <li><a href="#"><img src="{% static 'extra-images/flicker_img05.jpg' %}" alt=""></a></li>
-                                        <li><a href="#"><img src="{% static 'extra-images/flicker_img06.jpg' %}" alt=""></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="church_flicker">
-                                    <h4 class="footer_title">Latest Prayers</h4>
-                                    <div class="footer_blog_post padding-top-0">
-                                        <figure>
-                                            <img src="{% static 'extra-images/footer_post_img_04.png' %}" alt="">
-                                        </figure>
-                                        <div class="footer-post-content">
-                                            <a href="#">Lorem ipsum dolor sit amet, co sectetur</a>
-                                            <span><i class="fa fa-clock-o" aria-hidden="true"></i>4 April 2017</span>
-                                        </div>
-                                    </div>
-                                    <div class="footer_blog_post">
-                                        <figure>
-                                            <img src="{% static 'extra-images/footer_post_img_04.png' %}" alt="">
-                                        </figure>
-                                        <div class="footer-post-content">
-                                            <a href="#">Lorem ipsum dolor sit amet, co sectetur</a>
-                                            <span><i class="fa fa-clock-o" aria-hidden="true"></i>4 April 2017</span>
-                                        </div>
-                                    </div>
-                                    <div class="footer_blog_post">
-                                        <figure>
-                                            <img src="{% static 'extra-images/footer_post_img_04.png' %}" alt="">
-                                        </figure>
-                                        <div class="footer-post-content">
-                                            <a href="#">Lorem ipsum dolor sit amet, co sectetur</a>
-                                            <span><i class="fa fa-clock-o" aria-hidden="true"></i>4 April 2017</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="church_flicker">
-                                    <h4 class="footer_title">Tags</h4>
-                                    <ul class="footer_tags">
-                                        <li><a href="">Church</a></li>
-                                        <li><a href="">Religious</a></li>
-                                        <li><a href="">Real Belief</a></li>
-                                        <li><a href="">Real Path</a></li>
-                                        <li><a href="">Divine Way</a></li>
-                                        <li><a href="">Amen</a></li>
-                                        <li><a href="">Sympathy</a></li>
-                                        <li><a href="">Rightousnes</a></li>
-                                        <li><a href="">Pray</a></li>
-                                        <li><a href="">Prayers</a></li>
-                                        <li><a href="">Love</a></li>
-                                        <li><a href="">Struggle</a></li>
-                                        <li><a href="">Divinity</a></li>
-                                        <li><a href="">Sweet Love</a></li>
-                                        <li><a href="">Ways</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div> {% endcomment %}
-                    </div>
-                </div>
-
-                
-            </div>
-        </footer>
-		
-		<div class="copyright-content center">
-			<div class="container">
-				<p><i class="fa fa-copyright" aria-hidden="true"></i>All Rights Reserved to <a href="index.html">Tinos Software & Security Solutions LLP</a>.</p>
-			</div>
-		</div>
-		
-        <!--video deta-->
-        <div id="v1" class="videos_play_modal modal fade" role="dialog">
-            <div class="modal-dialog">
-            <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="default_vides_playblack">
-                        <button type="button" class="close" data-dismiss="modal controls=1">&times;</button>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/XYi75x-ZvGE?autoplay=0&controls=1&loop=1&playlist=8HSr8BjcufM&amp;showinfo=0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </div>
-        <!--video deta ends-->
-        
-	</div>
-    <!--church wrapper ends-->
-
-
-    <!-- jquery javascript-->
-    {% comment %} <script src="{% static 'js/jquery.js' %}"></script>
-  
-    <script src="{% static 'js/bootstrap.js' %}"></script>
-   
-    <script src="{% static 'js/modernizr.js' %}"></script>
-    
-    <script src="{% static 'js/responsive-jquery.js' %}"></script>
-    
-    <script src="{% static 'js/audio.js' %}"></script>
-    
-    <script src="{% static 'js/slick.js' %}"></script>
-    <script src="{% static 'js/slider_fancy.js' %}"></script>
-    <script src="{% static 'js/accordian.js' %}"></script>
-    <script src="{% static 'js/selectric.js' %}"></script>
-    <script src="{% static 'js/imgslider.min.js' %}"></script>
-    
-    <script src="{% static 'js/custom.js' %}"></script> {% endcomment %}
-	<script>
-		function toggleReadMore() {
-			var moreContent = document.getElementById("moreContent");
-			var btn = document.getElementById("readMoreBtn");
-		
-			if (moreContent.style.display === "none") {
-				moreContent.style.display = "block";  // Show more content
-				btn.innerHTML = "Show Less";          // Change button text
-			} else {
-				moreContent.style.display = "none";   // Hide content
-				btn.innerHTML = "Read More";          // Reset button text
-			}
-		}
-	</script>
-	<script src="{% static 'js/jquery.js' %}"></script> <!-- jQuery first -->
-	<script src="{% static 'js/bootstrap.js' %}"></script> <!-- Then Bootstrap -->
-	<!-- Other libraries -->
-	<script src="{% static 'js/modernizr.js' %}"></script>
-	<script src="{% static 'js/responsive-jquery.js' %}"></script>
-	<script src="{% static 'js/audio.js' %}"></script>
-	<script src="{% static 'js/slick.js' %}"></script>
-	<script src="{% static 'js/slider_fancy.js' %}"></script>
-	<script src="{% static 'js/accordian.js' %}"></script>
-	<script src="{% static 'js/selectric.js' %}"></script>
-	<script src="{% static 'js/imgslider.min.js' %}"></script>
-
-	<!-- Finally, Custom Scripts -->
-	<script src="{% static 'js/custom.js' %}"></script>
-
-  </body>
+    </footer>
+    <!-- Footer -->	
+    <!-- jQuery Lib -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <!-- Bootstrap Js -->
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <!-- Easing Js -->
+    <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+    <!-- Carousel Js Code -->
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script> 
+    <!-- Paroller Js -->
+    <script src="{% static 'js/jquery.paroller.min.js' %}"></script>
+    <!-- Isotope Js -->
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <!-- Magnific Popup Js -->
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+	<!-- Validator Js -->
+    <script src="{% static 'js/validator.min.js' %}"></script>
+    <!-- Smart Resize Js -->
+    <script src="{% static 'js/smartresize.min.js' %}"></script>
+    <!-- Appear Js -->
+    <script src="{% static 'js/jquery.appear.min.js' %}"></script>
+    <!-- Theme Custom Js -->
+    <script src="{% static 'js/custom.js' %}"></script>
+	<!-- REVOLUTION JS FILES -->
+	<script src="{% static 'rs-plugin/js/jquery.themepunch.tools.min.js' %}"></script>
+	<script src="{% static 'rs-plugin/js/jquery.themepunch.revolution.min.js' %}"></script>
+	<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+	<script src="{% static 'rs-plugin/js/main-slider/rbtools.min.js' %}"></script>
+	<script src="{% static 'rs-plugin/js/main-slider/rs6.min.js' %}"></script>
+	<script src="{% static 'rs-plugin/js/main-slider/home-1.js' %}"></script>
+</body>
+<!-- Body End -->
 </html>
