@@ -262,14 +262,14 @@
                                         </li>
                                     </ul>
                                     <ul class="footer-bottom-items footer-menu pull-right">
-                                        <li class="nav-item">               
+                                        {% comment %} <li class="nav-item">               
                                             <a href="#">Privacy</a>
                                         </li>
                                         <li class="nav-item">               
                                             <a href="#">Sermons</a>
-                                        </li>
+                                        </li> {% endcomment %}
                                         <li class="nav-item">               
-                                            <a href="#">Contact Us</a>
+                                            <a href="{% url 'contact' %}">Contact Us</a>
                                         </li>
                                     </ul>
                                 </div>

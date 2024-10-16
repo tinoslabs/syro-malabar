@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %} 
+            <!-- header -->
+            <!-- page-header -->
+            <div class="page-title-wrap typo-white">
+                <div class="page-title-wrap-inner section-bg-img" data-bg="{% static 'images/1.jpg' %}">
+					<span class="theme-overlay"></span>
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-md-12">
+                                <div class="page-title-inner">
+									<div id="breadcrumb" class="breadcrumb margin-bottom-10">
+                                        <a href="{% url 'index' %}t">News Details</span>
+                                    </div>
+                                    <h1 class="page-title mb-0">{{ news_item.news_heading }}</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- page-header -->
+            <!-- Page Content -->
+            <div class="content-wrapper pad-none">
+                <div class="content-inner">					
+					<!-- Sermon Section -->
+                    <section id="ministries-section" class="ministries-section pad-bottom-70">
+                        <div class="container">
+							 <!-- Sermon Main Wrap -->
+							<div class="ministries-main-wrap ministries-grid">
+								<!-- Row -->
+								<div class="row">
+									<!-- Col -->
+									<div class="col-lg-8">
+										<!-- Row -->
+										
+										<!-- Row -->
+										<!-- Row 2 -->
+										<div class="row">
+											<!-- Col -->
+											<div class="col-md-12">		
+												<p class="margin-bottom-15">{{ news_item.description|safe }}</p>											
+											</div>
+											 <!-- Col -->                                    
+										</div>
+										<!-- Row 2 -->
+										<!-- Row 3 -->
+										
+										<!-- Row 3 -->
+									</div>
+									<!-- Col -->
+                                    
+                                    <!-- Col -->
+								</div>
+								<!-- Row -->
+							</div>
+							<!-- Sermon Main Wrap -->
+						</div>
+						<!-- Container -->
+                    </section>
+                    <!-- Sermon Section End -->
+                </div>
+            </div>
+        </div>
+    <!-- .page-wrapper-inner -->
+    </div>
+    <!--page-wrapper-->
+
+    {% endblock %}

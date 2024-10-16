@@ -802,7 +802,7 @@
 																<li>
 																	<div class="post-date">
 																		<!-- Dynamic Date -->
-																		<a href=""><i class="ti-calendar"></i> {{ item.date|date:"M d, Y" }}</a>
+																		<a href="{% url 'news_details' item.id %}"><i class="ti-calendar"></i> {{ item.date|date:"M d, Y" }}</a>
 																	</div>
 																</li>
 															</ul>
@@ -812,13 +812,13 @@
 														<div class="blog-title">
 															<!-- Dynamic Heading -->
 															<h4 class="margin-bottom-10">
-																<a href="" class="blog-name">{{ item.news_heading }}</a>
+																<a href="{% url 'news_details' item.id %}" class="blog-name">{{ item.news_heading }}</a>
 															</h4>
 														</div>
 														<div class="post-desc mt-2">
 															<!-- Dynamic Read More Link (if you want to link to a details page, update the href) -->
 															<div class="blog-link">
-																<a target="_blank" href="" class="link font-w-500">Read More</a>
+																<a target="_blank" href="{% url 'news_details' item.id %}" class="link font-w-500">Read More</a>
 															</div>
 														</div>
 													</div>
@@ -942,14 +942,14 @@
                                 </li>
                             </ul>
                             <ul class="footer-bottom-items footer-menu pull-right">
-                                <li class="nav-item">               
+                                {% comment %} <li class="nav-item">               
                                     <a href="#">Privacy</a>
                                 </li>
 								<li class="nav-item">               
                                     <a href="#">Sermons</a>
-                                </li>
+                                </li> {% endcomment %}
 								<li class="nav-item">               
-                                    <a href="#">Contact Us</a>
+                                    <a href="{% url 'contact' %}">Contact Us</a>
                                 </li>
                             </ul>
                         </div>
